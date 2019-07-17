@@ -6,10 +6,10 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Логотип приложения Пинк">
-      </a>
       <nav class="main-nav">
+        <a class="page-header__logo site-logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="75" height="22" alt="Логотип приложения Пинк">
+        </a>
         <button class="main-nav__toggle" type="button">Закрыть меню</button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -28,59 +28,73 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Фотографии пользователей</h1>
+      <h1 class="page-main__title first-title">Фотографии пользователей</h1>
       <section class="user-photos">
         <h2 class="visually-hiiden">Блок с фотографиями пользователей</h2>
-        <p class="user-photos__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <p class="user-photos__moto">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <ul class="user-photos__list photo-list">
           <li class="photo-list__item photo-list__item--popular">
             <img class="photo-list__image photo-list__image--popular" src="img/user-photo-panorama.jpg" width="320" height="137" alt="Панорама">
-            <p class="photo-list__author-name">Анна</p>
-            <p class="photo-list__publication-time">(5 минут назад)</p>
-            <p class="photo-list__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <p class="photo-list__likes-count">Нравится: 215</p>
+            <blockquote class="photo-list__quote quote">
+              <cite class="photo-list__author-name">Анна</cite>
+              <p class="photo-list__publication-time">(5 минут назад)</p>
+              <p class="photo-list__desc">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="photo-list__likes-counter">Нравится: <output class="photo-list__likes-output">215</output></p>
+            </blockquote>
           </li>
           <li class="photo-list__item">
             <img class="photo-list__image" src="img/user-photo-car.jpg" width="280" height="180" alt="Автомобиль">
-            <p class="photo-list__author-name">Левон</p>
-            <p class="photo-list__publication-time">(5 часов назад)</p>
-            <p class="photo-list__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <p class="photo-list__likes-count">Нравится: 356</p>
+            <blockquote class="photo-list__quote quote">
+              <cite class="photo-list__author-name">Левон</cite>
+              <p class="photo-list__publication-time">(5 часов назад)</p>
+              <p class="photo-list__desc">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="photo-list__likes-counter">Нравится: <output class="photo-list__likes-output">356</output></p>
+            </blockquote>
           </li>
           <li class="photo-list__item">
             <img class="photo-list__image" src="img/user-photo-drum.jpg" width="280" height="180" alt="Барабан">
-            <p class="photo-list__author-name">Антон</p>
-            <p class="photo-list__publication-time">(12 часов назад)</p>
-            <p class="photo-list__desc">Соседи будут рады!</p>
-            <p class="photo-list__likes-count">Нравится: 666</p>
+            <blockquote class="photo-list__quote quote">
+              <cite class="photo-list__author-name">Антон</cite>
+              <p class="photo-list__publication-time">(12 часов назад)</p>
+              <p class="photo-list__desc">Соседи будут рады!</p>
+              <p class="photo-list__likes-counter">Нравится: <output class="photo-list__likes-output">666</p>
+            </blockquote>
           </li>
           <li class="photo-list__item">
             <img class="photo-list__image" src="img/user-photo-sky.jpg" width="280" height="180" alt="Небо">
-            <p class="photo-list__author-name">Борис</p>
-            <p class="photo-list__publication-time">(20 часов назад)</p>
-            <p class="photo-list__desc">Здесь могла быть ваша цитата о высоком и вечном</p>
-            <p class="photo-list__likes-count">Нравится: 215</p>
+            <blockquote class="photo-list__quote quote">
+              <cite class="photo-list__author-name">Борис</cite>
+              <p class="photo-list__publication-time">(20 часов назад)</p>
+              <p class="photo-list__desc">Здесь могла быть ваша цитата о высоком и вечном</p>
+              <p class="photo-list__likes-counter">Нравится: <output class="photo-list__likes-output">215</output></p>
+            </blockquote>
           </li>
           <li class="photo-list__item">
             <img class="photo-list__image" src="img/user-photo-market.jpg" width="280" height="180" alt="Рынок">
-            <p class="photo-list__author-name">Сергей</p>
-            <p class="photo-list__publication-time">(25 часов назад)</p>
-            <p class="photo-list__desc">Самая кубанская в мире!</p>
-            <p class="photo-list__likes-count">Нравится: 4</p>
+            <blockquote class="photo-list__quote quote">
+              <cite class="photo-list__author-name">Сергей</cite>
+              <p class="photo-list__publication-time">(25 часов назад)</p>
+              <p class="photo-list__desc">Самая кубанская в мире!</p>
+              <p class="photo-list__likes-counter">Нравится: <output class="photo-list__likes-output">4</output></p>
+            </blockquote>
           </li>
           <li class="photo-list__item">
             <img class="photo-list__image" src="img/user-photo-feet.jpg" width="280" height="180" alt="Ноги на фоне гор">
-            <p class="photo-list__author-name">Максим</p>
-            <p class="photo-list__publication-time">(40 часов назад)</p>
-            <p class="photo-list__desc">Где снег-то?</p>
-            <p class="photo-list__likes-count">Нравится: 150</p>
+            <blockquote class="photo-list__quote quote">
+              <cite class="photo-list__author-name">Максим</cite>
+              <p class="photo-list__publication-time">(40 часов назад)</p>
+              <p class="photo-list__desc">Где снег-то?</p>
+              <p class="photo-list__likes-counter">Нравится: <output class="photo-list__likes-output">150</output></p>
+            </blockquote>
           </li>
           <li class="photo-list__item">
             <img class="photo-list__image" src="img/user-photo-plane.jpg" width="280" height="180" alt="Самолет">
-            <p class="photo-list__author-name">Надежда</p>
-            <p class="photo-list__publication-time">(45 часов назад)</p>
-            <p class="photo-list__desc">Всем GM и взаимные лайки!</p>
-            <p class="photo-list__likes-count">Нравится: 2560</p>
+            <blockquote class="photo-list__quote quote">
+              <cite class="photo-list__author-name">Надежда</cite>
+              <p class="photo-list__publication-time">(45 часов назад)</p>
+              <p class="photo-list__desc">Всем GM и взаимные лайки!</p>
+              <p class="photo-list__likes-counter">Нравится: <output class="photo-list__likes-output">2560</output></p>
+            </blockquote>
           </li>
         </ul>
       </section>
@@ -93,11 +107,11 @@
         <li class="social-list__item">
           <a class="social-list__link social-list__link--twitter" href="https://twitter.com/">Мы в Твиттере</a>
         </li>
-        <li class="social-list__item social-list__link--facebook">
-          <a class="social-list__link" href="https://facebook.com">Мы в Facebook</a>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--facebook" href="https://facebook.com">Мы в Facebook</a>
         </li>
-        <li class="social-list__item social-list__link--youtube">
-          <a class="social-list__link" href="https://youtube.com">Мы на Youtube</a>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--youtube" href="https://youtube.com">Мы на Youtube</a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
