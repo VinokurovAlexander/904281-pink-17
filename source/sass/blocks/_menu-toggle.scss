@@ -1,0 +1,42 @@
+.menu-toggle {
+  position: relative;
+  width: 24px;
+  height: 24px;
+
+  background-color: transparent;
+  font-size: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle::after,
+.menu-toggle::before {
+  content: '';
+  position: absolute;
+  top: 46%;
+  left: -3px;
+
+  width: 30px;
+  height: 2px;
+
+  background-color: #ffffff;
+}
+
+.menu-toggle::after {
+  transform: rotate(45deg);
+}
+
+.menu-toggle::before {
+  transform: rotate(-45deg);
+}
+
+.menu-toggle:hover::after,
+.menu-toggle:hover::before {
+  background-color: #d22856;
+}
+
+.menu-toggle:active::after,
+.menu-toggle:active::before {
+  // opacity: 0.3;
+  background-color: #431120;
+}

@@ -1,0 +1,29 @@
+.menu-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  border-top: 1px solid #000001;
+}
+
+.menu-list__item {
+  padding-top: 16px;
+  padding-bottom: 14px;
+
+  text-align: center;
+  border-bottom: 1px solid #000001;
+  border-top: 1px solid #485461;
+}
+
+.menu-list__link {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu-list__link--current {
+  cursor: pointer;
+}
