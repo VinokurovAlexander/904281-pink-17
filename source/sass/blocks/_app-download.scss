@@ -1,3 +1,45 @@
 .app-download {
-  background-image: url();
+  width: 320px;
+  min-height: 370px;
+  margin: 0 auto;
+  padding-top: 25px;
+
+  background:
+    left top 109px no-repeat url("../img/iphone-hand-mobile@1x.png"),
+    center top no-repeat url("../img/bg-back-mobile@1x-2.jpg");
+  background-color: #1d2631;
+}
+
+.app-download__moto {
+  display: block;
+  width: 225px;
+  margin: 0 auto;
+
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.app-download__button {
+  margin: 0 auto;
+  margin-top: 340px;
+  margin-bottom: 32px;
+}
+
+.app-download__list {
+  margin:0 auto;
+  margin-bottom: 20px;
+}
+
+.app-download__text {
+  width: 235px;
+  margin: 0 auto;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
 }
