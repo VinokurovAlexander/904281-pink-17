@@ -8,9 +8,11 @@
   margin: 0 auto;
 }
 
-.page-main--form-page {
-  min-height:140px;
+.page-main__header {
+  min-height: 140px;
   padding-top: 30px;
 
   background: url("../img/bg-back-mobile@1x-2.jpg");
+  background-position: 50% 30%;
+  background-color: $blue;
 }

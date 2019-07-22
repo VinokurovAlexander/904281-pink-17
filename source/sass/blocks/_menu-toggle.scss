@@ -32,11 +32,10 @@
 
 .menu-toggle:hover::after,
 .menu-toggle:hover::before {
-  background-color: #d22856;
+  background-color: $pink;
 }
 
 .menu-toggle:active::after,
 .menu-toggle:active::before {
-  // opacity: 0.3;
   background-color: #431120;
 }

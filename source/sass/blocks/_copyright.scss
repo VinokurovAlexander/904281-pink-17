@@ -1,4 +1,4 @@
-.copyright__text {
+.copyright__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,16 +9,12 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: #283645;
-}
-
-.copyright__link {
-  padding-top: 4px;
-  padding: 4px 0;
+  color: $blue;
+  text-decoration: none;
 }
 
 .copyright__link:hover path {
-  fill: #283645;
+  fill: $blue;
 }
 
 .copyright__link:active path {

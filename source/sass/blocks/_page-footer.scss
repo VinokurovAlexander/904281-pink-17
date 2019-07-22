@@ -5,13 +5,13 @@
 
   width: 320px;
   margin: 0 auto;
-  padding: 35px 0;
+  padding: 36px 0;
 
   background-color: #ffffff;
 }
 
 .page-footer__list {
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 }
 
 .page-footer__logo {
@@ -19,7 +19,7 @@
 }
 
 .page-footer__logo:hover path {
-  fill: #d22856;
+  fill: $pink;
 }
 
 .page-footer__logo:active {

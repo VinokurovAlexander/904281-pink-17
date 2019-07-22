@@ -27,3 +27,11 @@
 .menu-list__link--current {
   cursor: pointer;
 }
+
+.menu-list__link:hover {
+  color: $pink;
+}
+
+.menu-list__link:active {
+  opacity: 0.3;
+}
