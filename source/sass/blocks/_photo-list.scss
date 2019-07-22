@@ -69,7 +69,7 @@
   text-transform: uppercase;
 }
 
-.photo-list__likes-counter:before {
+.photo-list__likes-counter::before {
   content: "";
   position: absolute;
   left: 0;
