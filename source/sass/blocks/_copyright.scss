@@ -1,0 +1,26 @@
+.copyright__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  margin: 0;
+  padding: 0 15px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #283645;
+}
+
+.copyright__link {
+  padding-top: 4px;
+  padding: 4px 0;
+}
+
+.copyright__link:hover path {
+  fill: #283645;
+}
+
+.copyright__link:active path {
+  opacity: 0.3;
+}
