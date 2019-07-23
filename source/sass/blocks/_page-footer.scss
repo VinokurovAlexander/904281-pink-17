@@ -1,0 +1,27 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 320px;
+  margin: 0 auto;
+  padding: 36px 0;
+
+  background-color: #ffffff;
+}
+
+.page-footer__list {
+  margin-bottom: 35px;
+}
+
+.page-footer__logo {
+  margin-bottom: 39px;
+}
+
+.page-footer__logo:hover path {
+  fill: $pink;
+}
+
+.page-footer__logo:active {
+  opacity: 0.3;
+}

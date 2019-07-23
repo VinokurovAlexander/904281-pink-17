@@ -1,0 +1,103 @@
+.photo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.photo-list__wrapper {
+  box-sizing: border-box;
+  width: 280px;
+  padding: 18px 18px;
+
+  background-color: #f2f2f2;
+}
+
+.photo-list__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.photo-list__author-name {
+  display: inline-block;
+}
+
+.photo-list__author-name,
+.photo-list__quote {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+  color: $blue;
+}
+
+.photo-list__publication-time {
+  display: inline-block;
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $blue;
+  text-transform: uppercase;
+}
+
+.photo-list__quote {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: 400;
+}
+
+.photo-list__likes-counter {
+  position: relative;
+
+  margin: 0;
+  padding-left: 30px;
+
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.photo-list__likes-counter::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+
+  width: 13px;
+  height: 13px;
+
+  background-image: url("../img/icon-heart-pink.svg");
+  background-repeat: no-repeat;
+}
+
+.photo-list__item--popular::before {
+  content: "Панорама дня";
+  position: absolute;
+  top: 0;
+  right: 6%;
+
+  box-sizing: border-box;
+  width: 140px;
+  height: 36px;
+  padding: 5px 15px;
+
+  background-color: $pink;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
