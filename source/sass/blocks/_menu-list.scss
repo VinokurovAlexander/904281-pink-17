@@ -1,6 +1,7 @@
 .menu-list {
   margin: 0;
   padding: 0;
+  margin-top: 3px;
 
   list-style: none;
   border-top: 1px solid #000001;
@@ -8,7 +9,7 @@
 
 .menu-list__item {
   padding-top: 16px;
-  padding-bottom: 14px;
+  padding-bottom: 15px;
 
   text-align: center;
   border-bottom: 1px solid #000001;
@@ -22,16 +23,22 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    color: $pink;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.menu-list__item--last {
+  position: relative;
+  z-index: 10;
+
+  background-color: $blue;
 }
 
 .menu-list__link--current {
   cursor: pointer;
-}
-
-.menu-list__link:hover {
-  color: $pink;
-}
-
-.menu-list__link:active {
-  opacity: 0.3;
 }

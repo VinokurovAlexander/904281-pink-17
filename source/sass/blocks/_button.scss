@@ -12,13 +12,13 @@
   border-radius: 30px;
   text-decoration: none;
   text-align: center;
-}
 
-.button:hover {
-  color: $pink;
-  background-color: #ffffff;
-}
+  &:hover {
+    color: $pink;
+    background-color: #ffffff;
+  }
 
-.button:active {
-  color: rgba(210, 40, 86, 0.3);
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
