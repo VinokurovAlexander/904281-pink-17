@@ -10,10 +10,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 22px;
+  // padding-top: 22px;
+  // padding-bottom: 18px;
   padding-left: 19px;
   padding-right: 19px;
-  padding-bottom: 18px;
 }
 
 .main-nav__toggle {
@@ -25,6 +25,10 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.main-nav--opened .main-nav__wrapper {
+  padding-bottom: 21px;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -79,4 +83,23 @@
 
 .main-nav--nojs .main-nav__toggle {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav--opened .main-nav__wrapper {
+    padding-top: 42px;
+    padding-bottom: 40px;
+  }
+
+  .main-nav--closed {
+    box-sizing: border-box;
+    min-height: 89px;
+    margin-bottom: -111px;
+    padding-top: 22px;
+    padding-bottom: 40px;
+  }
+
+  .main-nav--opened {
+    margin-bottom: -111px;
+  }
 }

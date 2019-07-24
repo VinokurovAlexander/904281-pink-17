@@ -16,3 +16,9 @@
   background-position: 50% 30%;
   background-color: $blue;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    width: $tablet-width;
+  }
+}
