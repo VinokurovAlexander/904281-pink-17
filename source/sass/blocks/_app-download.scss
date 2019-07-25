@@ -87,5 +87,41 @@
     width: auto;
     font-size: 18px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .app-download {
+    min-height: 643px;
+    padding-bottom: 100px;
+    padding-left: 130px;
+    padding-right: 130px;
+
+    background:
+      right 3% bottom no-repeat url("../img/iphone-hand-desktop@1x.png"),
+      center top no-repeat url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .app-download__wrapper {
+    margin-top: 110px;
+  }
+
+  .app-download__moto {
+    margin-bottom: 50px;
+
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .app-download__button {
+    padding: 12px 37px;
+    margin-bottom: 65px;
+
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .app-download__list {
+    margin-bottom: 55px;
+  }
 
 }

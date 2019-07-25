@@ -10,3 +10,9 @@
     width: 660px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
+}

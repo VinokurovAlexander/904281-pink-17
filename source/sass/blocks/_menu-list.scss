@@ -31,13 +31,28 @@
   }
 }
 
-.menu-list__item--last {
-  position: relative;
-  z-index: 10;
-
-  background-color: $blue;
-}
-
 .menu-list__link--current {
   cursor: pointer;
+}
+
+@media (min-width: $desktop-width) {
+  .menu-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 620px;
+  }
+
+  .menu-list__item {
+    border: none;
+  }
+
+  .menu-list__link {
+    line-height: 18px;
+    font-weight: 400;
+
+    text-transform: none;
+  }
+
 }

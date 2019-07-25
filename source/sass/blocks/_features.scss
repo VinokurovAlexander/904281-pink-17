@@ -46,3 +46,9 @@
     justify-content: flex-end;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .features {
+    background-color: #f2f2f2;
+  }
+}
