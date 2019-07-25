@@ -1,0 +1,48 @@
+.features {
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-bottom: 70px;
+
+  background-image: url("../img/icon-timer.svg");
+  background-repeat: no-repeat;
+  background-position: left 5% top 57%;
+  background-size: 36%;
+}
+
+.features__wrapper {
+  width: 312px;
+  margin-top: 95px;
+}
+
+.features__moto {
+  display: block;
+  width: 175px;
+  margin-bottom: 10px;
+
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.features__desc {
+  width: 280px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.features_link {
+  color: $pink;
+}
+
+@media (min-width: $mobile-width) {
+  .features {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

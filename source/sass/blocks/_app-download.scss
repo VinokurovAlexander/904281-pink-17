@@ -1,12 +1,17 @@
 .app-download {
   min-height: 370px;
   padding-bottom: 29px;
-  padding-top: 90px;
+  padding-top: 92px;
 
   background:
     left top 176px no-repeat url("../img/iphone-hand-mobile@1x.png"),
     center top no-repeat url("../img/bg-back-mobile@1x.jpg");
   background-color: #1d2631;
+}
+
+.app-download__wrapper {
+  padding-left: 19px;
+  padding-right: 19px;
 }
 
 .app-download__moto {
@@ -59,6 +64,7 @@
   .app-download__wrapper {
     width: 300px;
     margin-top: 95px;
+    padding: 0;
   }
 
   .app-download__moto {
@@ -83,9 +89,3 @@
   }
 
 }
-//
-// @media (min-width: $desktop-width) {
-//   .app-download {
-//     background-image: url("../img/bg-back-desktop@1x.jpg");
-//   }
-// }
