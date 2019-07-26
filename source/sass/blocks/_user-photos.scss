@@ -1,7 +1,7 @@
 .user-photos__moto {
   width: 240px;
   margin: 0 auto;
-  padding-top: 46px;
+  padding-top: 45px;
   padding-bottom: 48px;
 
   font-size: 14px;
@@ -9,4 +9,14 @@
   font-weight: 400;
   color: $blue;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .user-photos__moto {
+    width: 445px;
+    padding-top: 95px;
+    padding-bottom: 74px;
+
+    font-size: 18px;
+  }
 }

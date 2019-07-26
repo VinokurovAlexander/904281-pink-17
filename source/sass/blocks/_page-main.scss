@@ -17,9 +17,27 @@
   background-color: $blue;
 }
 
+@media (min-width: $mobile-width) {
+  .page-main__header--photo-page {
+    padding-top: 99px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-main {
     width: $tablet-width;
+  }
+
+  .page-main__header--photo-page {
+    min-height: 256px;
+    padding-top: 185px;
+  }
+
+  .page-main__title {
+    width: 370px;
+
+    font-size: 50px;
+    line-height: 60px;
   }
 }
 
