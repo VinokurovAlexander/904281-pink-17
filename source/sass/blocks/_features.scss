@@ -45,10 +45,47 @@
     display: flex;
     justify-content: flex-end;
   }
+
 }
 
 @media (min-width: $desktop-width) {
   .features {
+    justify-content: stretch;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 113px;
+
     background-color: #f2f2f2;
+    background-size: 25%;
+    background-position: left 14% top;
+  }
+
+  .features__wrapper {
+    width: 525px;
+    margin-left: 368px;
+  }
+
+  .features__moto {
+    width: 300px;
+    margin-bottom: 22px;
+
+    line-height: 30px;
+  }
+
+  .features__moto br {
+    display: none;
+  }
+
+  .features__desc {
+    width: auto;
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .features_link {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

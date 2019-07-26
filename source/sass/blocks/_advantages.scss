@@ -162,7 +162,7 @@
   .advantages__list {
     flex-direction: row;
     align-items: stretch;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 5px;
     padding-left: 130px;
     padding-right: 130px;
@@ -176,7 +176,7 @@
     padding-top: 350px;
 
     background-repeat: no-repeat;
-    background-position: center top -5%;
+    background-position: center top -4%;
   }
 
   .advantages__item--bg-mood {
