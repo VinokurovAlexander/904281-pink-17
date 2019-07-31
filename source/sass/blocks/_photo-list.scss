@@ -94,7 +94,7 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width: $tablet-width),(min-width: $desktop-width) {
+@media (max-width: $tablet-width), (min-width: $desktop-width) {
   .photo-list__image--tablet {
     display: none;
   }

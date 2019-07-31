@@ -40,6 +40,8 @@
 
   .popular-photo__quote {
     order: 2;
+    padding-right: 2px;
+    margin-bottom: 0;
   }
 
   .popular-photo__author-name {
@@ -49,11 +51,6 @@
   .popular-photo__likes-counter {
     padding-left: 0;
     padding-right: 28px;
-  }
-
-  .popular-photo__quote {
-    padding-right: 2px;
-    margin-bottom: 0;
   }
 
   .popular-photo .likes-counter::before {
