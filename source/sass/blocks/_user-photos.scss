@@ -20,3 +20,10 @@
     font-size: 18px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .user-photos__moto {
+    width: 580px;
+    padding-bottom: 87px;
+  }
+}

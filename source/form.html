@@ -7,12 +7,12 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo site-logo" href="index.html">
             <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения Пинк">
           </a>
-          <button class="main-nav__toggle menu-toggle" type="button">Закрыть меню</button>
+          <button class="main-nav__toggle menu-toggle" type="button"><span class="visually-hidden">Закрыть меню</span></button>
         </div>
         <ul class="main-nav__list menu-list">
           <li class="menu-list__item">
@@ -72,5 +72,6 @@
             </svg>
           </a>
     </footer>
+    <script src="js/menu-toggle.js"></script>
   </body>
 </html>

@@ -55,4 +55,8 @@
     text-transform: none;
   }
 
+  .menu-list__link--current {
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+  }
 }

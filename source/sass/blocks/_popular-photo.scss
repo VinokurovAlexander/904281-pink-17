@@ -65,4 +65,31 @@
     top: 58px;
     right: 20px;
   }
+
+  .popular-photo__image--mobile {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width), (min-width: $desktop-width) {
+  .popular-photo__image--tablet {
+    display: none;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .popular-photo__image--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .popular-photo::before {
+    top: 54px;
+    right: 130px;
+  }
+
+  .popular-photo__wrapper {
+    width: 940px;
+  }
 }
