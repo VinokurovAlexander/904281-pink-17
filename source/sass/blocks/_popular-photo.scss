@@ -1,0 +1,68 @@
+.popular-photo {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popular-photo::before {
+  content: "Панорама дня";
+  position: absolute;
+  top: 0;
+  right: 6%;
+
+  box-sizing: border-box;
+  width: 140px;
+  height: 36px;
+  padding: 5px 15px;
+
+  background-color: $pink;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .popular-photo__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 620px;
+    min-height: auto;
+    padding: 25px 28px;
+  }
+
+  .popular-photo__quote {
+    order: 2;
+  }
+
+  .popular-photo__author-name {
+    margin-right: 3px;
+  }
+
+  .popular-photo__likes-counter {
+    padding-left: 0;
+    padding-right: 28px;
+  }
+
+  .popular-photo__quote {
+    padding-right: 2px;
+    margin-bottom: 0;
+  }
+
+  .popular-photo .likes-counter::before {
+    left: auto;
+    right: 0;
+  }
+
+  .popular-photo::before {
+    top: 58px;
+    right: 20px;
+  }
+}

@@ -1,0 +1,25 @@
+.likes-counter {
+  position: relative;
+
+  margin: 0;
+  padding-left: 30px;
+
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.likes-counter::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+
+  width: 13px;
+  height: 13px;
+
+  background-image: url("../img/icon-heart-pink.svg");
+  background-repeat: no-repeat;
+}

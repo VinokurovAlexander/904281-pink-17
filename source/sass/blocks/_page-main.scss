@@ -29,8 +29,8 @@
   }
 
   .page-main__header--photo-page {
-    min-height: 256px;
-    padding-top: 185px;
+    min-height: 258px;
+    padding-top: 183px;
   }
 
   .page-main__title {
@@ -38,6 +38,10 @@
 
     font-size: 50px;
     line-height: 60px;
+  }
+
+  .page-main__popular-photo {
+    margin-bottom: 48px;
   }
 }
 

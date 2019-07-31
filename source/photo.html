@@ -37,75 +37,89 @@
       <section class="user-photos">
         <h2 class="visually-hidden">Блок с фотографиями пользователей</h2>
         <p class="user-photos__moto">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <section class="page-main__popular-photo popular-photo">
+          <img class="photo-list__image photo-list__image--mobile" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама">
+          <img class="photo-list__image photo-list__image--tablet" src="img/panorama-tablet@1x.jpg" width="660" height="510">
+          <div class="photo-list__wrapper popular-photo__wrapper">
+            <p class="photo-list__info popular-photo__info">
+              <cite class="photo-list__author-name popular-photo__author-name">Анна</cite>
+              <span class="photo-list__publication-time popular-photo__publication-time">(5 минут назад)</span>
+            </p>
+            <blockquote class="photo-list__quote popular-photo__quote">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
+            <p class="popular-photo__likes-counter likes-counter">Нравится: <output class="photo-list__likes-output">215</output></p>
+          </div>
+        </section>
         <ul class="user-photos__list photo-list">
-          <li class="photo-list__item photo-list__item--popular">
-            <img class="photo-list__image photo-list__image--popular photo-list__image--mobile" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама">
-            <img class="photo-list__image photo-list__image--popular photo-list__image--tablet" src="img/panorama-tablet@1x.jpg" width="660" height="510">
-            <div class="photo-list__wrapper">
-              <cite class="photo-list__author-name">Анна</cite>
-              <p class="photo-list__publication-time">(5 минут назад)</p>
-              <blockquote class="photo-list__quote">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
-              <p class="photo-list__likes-counter">Нравится: <output class="photo-list__likes-output">215</output></p>
-            </div>
-          </li>
           <li class="photo-list__item">
             <img class="photo-list__image photo-list__image--mobile" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Автомобиль">
-            <img class="photo-list__image photo-list__image--popular photo-list__image--tablet" src="img/photo-car-tablet@1x.jpg" width="300" height="300">
-            <div class="photo-list__wrapper">
-              <cite class="photo-list__author-name">Левон</cite>
-              <p class="photo-list__publication-time">(5 часов назад)</p>
+            <img class="photo-list__image photo-list__image--tablet" src="img/photo-car-tablet@1x.jpg" width="300" height="300">
+            <div class="photo-list__wrapper ">
+              <p class="photo-list__info">
+                <cite class="photo-list__author-name">Левон</cite>
+                <span class="photo-list__publication-time">(5 часов назад)</span>
+              </p>
               <blockquote class="photo-list__quote">Вчера он на луну летал, сегодня в руки к нам попал.</blockquote>
               <p class="photo-list__likes-counter">Нравится: <output class="photo-list__likes-output">356</output></p>
             </div>
           </li>
           <li class="photo-list__item">
             <img class="photo-list__image photo-list__image--mobile" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабан">
-            <img class="photo-list__image photo-list__image--popular photo-list__image--tablet" src="img/photo-drumset-tablet@1x.jpg" width="300" height="300">
+            <img class="photo-list__image photo-list__image--tablet" src="img/photo-drumset-tablet@1x.jpg" width="300" height="300">
             <div class="photo-list__wrapper">
-              <cite class="photo-list__author-name">Антон</cite>
-              <p class="photo-list__publication-time">(12 часов назад)</p>
+              <p class="photo-list__info">
+                <cite class="photo-list__author-name">Антон</cite>
+                <span class="photo-list__publication-time">(12 часов назад)</span>
+              </p>
               <blockquote class="photo-list__quote">Соседи будут рады!</blockquote>
-              <p class="photo-list__likes-counter">Нравится: <output class="photo-list__likes-output">666</p>
+              <p class="photo-list__likes-counter likes-counter">Нравится: <output class="photo-list__likes-output">666</p>
             </div>
           </li>
           <li class="photo-list__item">
             <img class="photo-list__image photo-list__image--mobile" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Небо">
-            <img class="photo-list__image photo-list__image--popular photo-list__image--tablet" src="img/photo-window-tablet@1x.jpg" width="300" height="300">
+            <img class="photo-list__image photo-list__image--tablet" src="img/photo-window-tablet@1x.jpg" width="300" height="300">
             <div class="photo-list__wrapper">
-              <cite class="photo-list__author-name">Борис</cite>
-              <p class="photo-list__publication-time">(20 часов назад)</p>
+              <p class="photo-list__info">
+                <cite class="photo-list__author-name">Борис</cite>
+                <span class="photo-list__publication-time">(20 часов назад)</span>
+              </p>
               <blockquote class="photo-list__quote">Здесь могла быть ваша цитата о высоком и вечном</blockquote>
-              <p class="photo-list__likes-counter">Нравится: <output class="photo-list__likes-output">215</output></p>
+              <p class="photo-list__likes-counter likes-counter">Нравится: <output class="photo-list__likes-output">215</output></p>
             </div>
           </li>
           <li class="photo-list__item">
             <img class="photo-list__image photo-list__image--mobile" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Рынок">
-            <img class="photo-list__image photo-list__image--popular photo-list__image--tablet" src="img/photo-fair-tablet@1x.jpg" width="300" height="300">
+            <img class="photo-list__image photo-list__image--tablet" src="img/photo-fair-tablet@1x.jpg" width="300" height="300">
             <div class="photo-list__wrapper">
-              <cite class="photo-list__author-name">Сергей</cite>
-              <p class="photo-list__publication-time">(25 часов назад)</p>
+              <p class="photo-list__info">
+                <cite class="photo-list__author-name">Сергей</cite>
+                <span class="photo-list__publication-time">(25 часов назад)</span>
+              </p>
               <blockquote class="photo-list__quote">Самая кубанская в мире!</blockquote>
-              <p class="photo-list__likes-counter">Нравится: <output class="photo-list__likes-output">4</output></p>
+              <p class="photo-list__likes-counter likes-counter">Нравится: <output class="photo-list__likes-output">4</output></p>
             </div>
           </li>
           <li class="photo-list__item">
             <img class="photo-list__image photo-list__image--mobile" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Ноги на фоне гор">
-            <img class="photo-list__image photo-list__image--popular photo-list__image--tablet" src="img/photo-pov-tablet@1x.jpg" width="300" height="300">
+            <img class="photo-list__image photo-list__image--tablet" src="img/photo-pov-tablet@1x.jpg" width="300" height="300">
             <div class="photo-list__wrapper">
-              <cite class="photo-list__author-name">Максим</cite>
-              <p class="photo-list__publication-time">(40 часов назад)</p>
+              <p class="photo-list__info">
+                <cite class="photo-list__author-name">Максим</cite>
+                <span class="photo-list__publication-time">(40 часов назад)</span>
+              </p>
               <blockquote class="photo-list__quote">Где снег-то?</blockquote>
-              <p class="photo-list__likes-counter">Нравится: <output class="photo-list__likes-output">150</output></p>
+              <p class="photo-list__likes-counter likes-counter">Нравится: <output class="photo-list__likes-output">150</output></p>
             </div>
           </li>
           <li class="photo-list__item">
             <img class="photo-list__image photo-list__image--mobile" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Самолет">
-            <img class="photo-list__image photo-list__image--popular photo-list__image--tablet" src="img/photo-wing-tablet@1x.jpg" width="300" height="300">
+            <img class="photo-list__image photo-list__image--tablet" src="img/photo-wing-tablet@1x.jpg" width="300" height="300">
             <div class="photo-list__wrapper">
-              <cite class="photo-list__author-name">Надежда</cite>
-              <p class="photo-list__publication-time">(45 часов назад)</p>
+              <p class="photo-list__info">
+                <cite class="photo-list__author-name">Надежда</cite>
+                <span class="photo-list__publication-time">(45 часов назад)</span>
+              </p>
               <blockquote class="photo-list__quote">Всем GM и взаимные лайки!</blockquote>
-              <p class="photo-list__likes-counter">Нравится: <output class="photo-list__likes-output">2560</output></p>
+              <p class="photo-list__likes-counter likes-counter">Нравится: <output class="photo-list__likes-output">2560</output></p>
             </div>
           </li>
         </ul>
