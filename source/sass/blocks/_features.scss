@@ -7,6 +7,12 @@
   background-repeat: no-repeat;
   background-position: left 5% top 57%;
   background-size: 36%;
+
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+
 }
 
 .features__wrapper {
@@ -32,12 +38,6 @@
 
 .features_link {
   color: $pink;
-}
-
-@media (min-width: $mobile-width) {
-  .features {
-    display: none;
-  }
 }
 
 @media (min-width: $tablet-width) {

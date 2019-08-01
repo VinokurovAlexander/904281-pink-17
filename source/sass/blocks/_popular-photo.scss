@@ -68,13 +68,13 @@
   }
 }
 
-@media (max-width: $tablet-width), (min-width: $desktop-width) {
+@media (max-width: 659px), (min-width: $desktop-width) {
   .popular-photo__image--tablet {
     display: none;
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: 959px) {
   .popular-photo__image--desktop {
     display: none;
   }

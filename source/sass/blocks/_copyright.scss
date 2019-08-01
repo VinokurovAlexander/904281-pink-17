@@ -11,6 +11,20 @@
   font-weight: 400;
   color: $blue;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 21px;
+    padding-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 155px;
+    padding-top: 7px;
+    padding-left: 0;
+
+    font-size: 18px;
+  }
 }
 
 .copyright__link:hover path {
@@ -19,22 +33,4 @@
 
 .copyright__link:active path {
   opacity: 0.3;
-}
-
-@media (min-width: $tablet-width) {
-  .copyright__link {
-    padding-right: 0;
-    padding-left: 21px;
-    padding-top: 5px;
-  }
-
-  @media (min-width: $desktop-width) {
-    .copyright__link {
-      width: 155px;
-      padding-top: 7px;
-      padding-left: 0;
-
-      font-size: 18px;
-    }
-  }
 }

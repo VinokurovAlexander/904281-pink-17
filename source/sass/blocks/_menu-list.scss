@@ -1,14 +1,19 @@
 .menu-list {
+  width: 320px;
   margin: 0;
   padding: 0;
 
   list-style: none;
   border-top: 1px solid #000001;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
 }
 
 .menu-list__item {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 16px;
+  padding-bottom: 14px;
 
   text-align: center;
   border-bottom: 1px solid #000001;

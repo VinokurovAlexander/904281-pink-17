@@ -94,13 +94,13 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width: $tablet-width), (min-width: $desktop-width) {
+@media (max-width: 659px), (min-width: $desktop-width) {
   .photo-list__image--tablet {
     display: none;
   }
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: 959px) {
   .photo-list__image--desktop {
     display: none;
   }
