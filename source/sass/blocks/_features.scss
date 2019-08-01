@@ -5,7 +5,7 @@
 
   background-image: url("../img/icon-timer.svg");
   background-repeat: no-repeat;
-  background-position: left 5% top 57%;
+  background-position: left 20px top 59px;
   background-size: 36%;
 
   @media (min-width: $mobile-width) {
@@ -25,7 +25,7 @@
 
     background-color: #f2f2f2;
     background-size: 25%;
-    background-position: left 14% top;
+    background-position: left 129px top -3px;
   }
 }
 
@@ -71,7 +71,7 @@
 }
 
 .features_link {
-  color: $pink;
+  color: $color-main;
 
   @media (min-width: $desktop-width) {
     font-size: 18px;

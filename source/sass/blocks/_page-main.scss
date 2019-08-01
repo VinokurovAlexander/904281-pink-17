@@ -27,12 +27,11 @@
   padding-top: 30px;
 
   background: url("../img/bg-back-mobile@1x-2.jpg");
-  background-position: 50% top;
   background-repeat: no-repeat;
-  background-color: $blue;
+  background-color: $color-secondary;
 
   @media (min-width: $mobile-width) {
-    padding-top: 98px;
+    padding-top: 97px;
   }
 
   @media (min-width: $tablet-width) {
@@ -40,7 +39,7 @@
     padding-top: 183px;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: 50% top;
+    background-position: left -270px top;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,11 +47,12 @@
     min-height: 219px;
 
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: top;
   }
 }
 
 .page-main__popular-photo {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 48px;

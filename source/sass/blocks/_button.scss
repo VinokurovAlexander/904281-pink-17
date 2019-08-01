@@ -2,7 +2,7 @@
   display: block;
   box-sizing: border-box;
   max-width: 300px;
-  padding: 16px 37px;
+  padding: 16px 36px;
 
   font-size: 18px;
   line-height: 18px;
@@ -14,7 +14,7 @@
   text-align: center;
 
   &:hover {
-    color: $pink;
+    color: $color-main;
     background-color: #ffffff;
   }
 

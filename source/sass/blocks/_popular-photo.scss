@@ -10,14 +10,14 @@
   content: "Панорама дня";
   position: absolute;
   top: 0;
-  right: 6%;
+  right: 20px;
 
   box-sizing: border-box;
   width: 140px;
   height: 36px;
   padding: 5px 15px;
 
-  background-color: $pink;
+  background-color: $color-main;
   font-size: 12px;
   line-height: 24px;
   font-weight: 700;

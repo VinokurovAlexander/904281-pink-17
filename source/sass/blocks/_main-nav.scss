@@ -3,7 +3,7 @@
 
   width: 320px;
 
-  background-color: $blue;
+  background-color: $color-secondary;
 
   @media (min-width: $tablet-width) {
     width: 660px;
@@ -86,7 +86,7 @@
 .main-nav--opened .main-nav__toggle:hover {
   &::after,
   &::before {
-    background-color: $pink;
+    background-color: $color-main;
   }
 }
 

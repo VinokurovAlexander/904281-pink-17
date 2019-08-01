@@ -66,6 +66,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: auto;
     margin-bottom: 50px;
 
     font-size: 50px;
@@ -84,7 +85,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 12px 37px;
+    padding: 12px 28px;
     margin-bottom: 65px;
 
     font-size: 21px;

@@ -9,7 +9,7 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: $blue;
+  color: $color-secondary;
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
@@ -28,7 +28,7 @@
 }
 
 .copyright__link:hover path {
-  fill: $blue;
+  fill: $color-secondary;
 }
 
 .copyright__link:active path {

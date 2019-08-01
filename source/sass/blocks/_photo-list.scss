@@ -79,7 +79,7 @@
   line-height: 24px;
   font-weight: 700;
   font-style: normal;
-  color: $blue;
+  color: $color-secondary;
 }
 
 .photo-list__publication-time {
@@ -89,13 +89,13 @@
   font-size: 12px;
   line-height: 24px;
   font-weight: 300;
-  color: $blue;
+  color: $color-secondary;
   text-transform: uppercase;
 }
 
 .photo-list__quote {
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 
   font-weight: 400;
 
