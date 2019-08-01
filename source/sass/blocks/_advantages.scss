@@ -1,7 +1,7 @@
 .advantages--image {
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center bottom -6%;
+  background-position: center bottom -42px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
@@ -181,6 +181,7 @@
 }
 
 .advantages__desc {
+  width: 265px;
   margin: 0;
 
   font-size: 14px;

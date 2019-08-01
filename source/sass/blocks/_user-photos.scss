@@ -2,27 +2,23 @@
   width: 240px;
   margin: 0 auto;
   padding-top: 45px;
-  padding-bottom: 48px;
+  padding-bottom: 49px;
 
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: $blue;
   text-align: center;
-}
 
-@media (min-width: $tablet-width) {
-  .user-photos__moto {
+  @media (min-width: $tablet-width) {
     width: 445px;
-    padding-top: 94px;
+    padding-top: 92px;
     padding-bottom: 74px;
 
     font-size: 18px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .user-photos__moto {
+  @media (min-width: $desktop-width) {
     width: 580px;
     padding-bottom: 87px;
   }
