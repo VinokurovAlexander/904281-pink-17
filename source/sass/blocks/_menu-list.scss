@@ -1,9 +1,22 @@
 .menu-list {
+  width: 320px;
   margin: 0;
   padding: 0;
 
   list-style: none;
   border-top: 1px solid #000001;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 620px;
+  }
 }
 
 .menu-list__item {
@@ -13,6 +26,10 @@
   text-align: center;
   border-bottom: 1px solid #000001;
   border-top: 1px solid #485461;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 }
 
 .menu-list__link {
@@ -22,16 +39,28 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    color: $color-main;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 18px;
+    font-weight: 400;
+
+    text-transform: none;
+  }
 }
 
 .menu-list__link--current {
   cursor: pointer;
-}
 
-.menu-list__link:hover {
-  color: $pink;
-}
-
-.menu-list__link:active {
-  opacity: 0.3;
+  @media (min-width: $desktop-width) {
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+  }
 }

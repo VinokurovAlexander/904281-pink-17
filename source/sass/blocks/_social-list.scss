@@ -18,6 +18,14 @@
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
+
+  &:hover {
+    border-color: #2e3b4a;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social-list__link--twitter {
@@ -30,12 +38,4 @@
 
 .social-list__link--youtube {
   background-image: url("../img/icon-youtube.svg");
-}
-
-.social-list__link:hover {
-  border-color: #2e3b4a;
-}
-
-.social-list__link:active {
-  opacity: 0.3;
 }

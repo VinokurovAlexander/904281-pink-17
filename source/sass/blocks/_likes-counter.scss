@@ -1,0 +1,40 @@
+.likes-counter {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-main;
+  text-transform: uppercase;
+}
+
+.likes-counter::before,
+.likes-counter::after {
+  content: "";
+  display: inline-block;
+
+  width: 13px;
+  height: 13px;
+
+  background-image: url("../img/icon-heart-pink.svg");
+  background-repeat: no-repeat;
+}
+
+.likes-counter::after {
+  margin-left: auto;
+
+  @media (max-width: 659px) {
+    display: none;
+  }
+}
+
+.likes-counter::before {
+  margin-right: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

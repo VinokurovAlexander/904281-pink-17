@@ -2,32 +2,33 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Конкурс</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo site-logo" href="index.html">
             <img class="main-nav__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип приложения Пинк">
           </a>
-          <button class="main-nav__toggle menu-toggle" type="button">Закрыть меню</button>
+          <button class="main-nav__toggle menu-toggle" type="button"><span class="visually-hidden">Закрыть меню</span></button>
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link menu-list__link--current">Конкурс</a>
+            </li>
+            <li class="menu-list__item">
+              <a class="menu-list__link" href="https://htmlacademy.ru">HTML Academy</a>
+            </li>
+          </ul>
         </div>
-        <ul class="main-nav__list menu-list">
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="index.html">Главная</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link menu-list__link--current">Конкурс</a>
-          </li>
-          <li class="menu-list__item">
-            <a class="menu-list__link" href="https://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
       </nav>
     </header>
     <main class="page-main page-main--form-page">
@@ -72,5 +73,6 @@
             </svg>
           </a>
     </footer>
+    <script src="js/menu-toggle.js"></script>
   </body>
 </html>

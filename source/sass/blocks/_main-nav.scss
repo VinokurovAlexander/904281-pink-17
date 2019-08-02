@@ -1,12 +1,126 @@
 .main-nav {
-  background-color: $blue;
+  position: absolute;
+
+  width: 320px;
+
+  background-color: $color-secondary;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .main-nav__wrapper {
   display: flex;
   justify-content: space-between;
-  padding-top: 21px;
-  padding-left: 19px;
-  padding-right: 19px;
-  padding-bottom: 22px;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+
+.main-nav__logo {
+  margin-left: 19px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.main-nav__toggle {
+  position: relative;
+
+  width: 24px;
+  height: 24px;
+  margin-right: 19px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__logo,
+.main-nav__toggle {
+  margin-top: 21px;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 44px;
+    margin-bottom: 38px;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    left: -3px;
+
+    width: 30px;
+    height: 2px;
+
+    background-color: #ffffff;
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav--opened .main-nav__toggle:hover {
+  &::after,
+  &::before {
+    background-color: $color-main;
+  }
+}
+
+.main-nav--opened .main-nav__toggle:active {
+  &::after,
+  &::before {
+    background-color: #431120;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  width: 50px;
+  background-image: url("../img/icon-menu-burger.svg");
+}
+
+.main-nav--closed {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav--opened {
+  position: relative;
+  margin-bottom: -66px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -114px;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--closed .menu-list {
+  @media (max-width: 959px) {
+    display: none;
+  }
 }

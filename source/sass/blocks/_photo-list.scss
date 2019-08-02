@@ -6,14 +6,50 @@
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    padding: 0;
+    margin: 0 auto;
+  }
 }
 
 .photo-list__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
   box-sizing: border-box;
   width: 280px;
-  padding: 18px 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 18px;
+  padding-bottom: 21px;
 
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    min-height: 155px;
+    padding-top: 25px;
+    padding-left: 27px;
+    padding-right: 31px;
+    padding-bottom: 21px;
+  }
+}
+
+.photo-list__info {
+  margin: 0;
+  padding: 0;
 }
 
 .photo-list__item {
@@ -22,7 +58,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 54px;
+  }
 }
 
 .photo-list__author-name {
@@ -35,7 +79,7 @@
   line-height: 24px;
   font-weight: 700;
   font-style: normal;
-  color: $blue;
+  color: $color-secondary;
 }
 
 .photo-list__publication-time {
@@ -45,7 +89,7 @@
   font-size: 12px;
   line-height: 24px;
   font-weight: 300;
-  color: $blue;
+  color: $color-secondary;
   text-transform: uppercase;
 }
 
@@ -54,50 +98,26 @@
   margin-bottom: 10px;
 
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: auto;
+  }
 }
 
-.photo-list__likes-counter {
-  position: relative;
-
-  margin: 0;
-  padding-left: 30px;
-
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $pink;
-  text-transform: uppercase;
+.photo-list__image--tablet {
+  @media (max-width: 659px), (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
-.photo-list__likes-counter::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 5px;
-
-  width: 13px;
-  height: 13px;
-
-  background-image: url("../img/icon-heart-pink.svg");
-  background-repeat: no-repeat;
+.photo-list__image--desktop {
+  @media (max-width: 959px) {
+    display: none;
+  }
 }
 
-.photo-list__item--popular::before {
-  content: "Панорама дня";
-  position: absolute;
-  top: 0;
-  right: 6%;
-
-  box-sizing: border-box;
-  width: 140px;
-  height: 36px;
-  padding: 5px 15px;
-
-  background-color: $pink;
-  font-size: 12px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-align: center;
+.photo-list__image--mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

@@ -1,0 +1,101 @@
+.popular-photo {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popular-photo::before {
+  content: "Панорама дня";
+  position: absolute;
+  top: 0;
+  right: 20px;
+
+  box-sizing: border-box;
+  width: 140px;
+  height: 36px;
+  padding: 5px 15px;
+
+  background-color: $color-main;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    top: 58px;
+    right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 54px;
+    right: 130px;
+  }
+}
+
+.popular-photo__wrapper {
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 620px;
+    min-height: auto;
+    padding: 25px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.popular-photo__quote {
+  @media (min-width: $tablet-width) {
+    order: 2;
+    padding-right: 2px;
+    margin-bottom: 0;
+  }
+}
+
+.popular-photo__author-name {
+  @media (min-width: $tablet-width) {
+    margin-right: 3px;
+  }
+}
+
+.popular-photo__likes-counter {
+  @media (min-width: $tablet-width) {
+    width: 120px;
+  }
+}
+
+.popular-photo .likes-counter::before {
+  @media (min-width: $tablet-width) {
+    left: auto;
+    right: 0;
+  }
+}
+
+.popular-photo__image--mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.popular-photo__image--tablet {
+  @media (max-width: 659px), (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.popular-photo__image--desktop {
+  @media (max-width: 959px) {
+    display: none;
+  }
+}

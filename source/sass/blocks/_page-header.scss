@@ -1,4 +1,15 @@
 .page-header {
+  position: relative;
+
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    max-width: 1200px;
+  }
 }
