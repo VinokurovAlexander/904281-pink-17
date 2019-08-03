@@ -3,22 +3,16 @@
   padding-right: 19px;
   padding-bottom: 70px;
 
-  background-image: url("../img/icon-timer.svg");
-  background-repeat: no-repeat;
-  background-position: left 20px top 59px;
-  background-size: 36%;
-
   @media (min-width: $mobile-width) {
     display: none;
   }
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: stretch;
     padding-left: 130px;
     padding-right: 130px;
     padding-bottom: 113px;
@@ -29,13 +23,18 @@
   }
 }
 
+.features__icon-timer {
+  margin: 0;
+  margin-top: 59px;
+}
+
 .features__wrapper {
   width: 312px;
   margin-top: 95px;
 
   @media (min-width: $desktop-width) {
     width: 525px;
-    margin-left: 368px;
+    // margin-left: 368px;
   }
 }
 
@@ -57,9 +56,10 @@
 }
 
 .features__desc {
-  width: 280px;
+  width: 296px;
   margin: 0;
   margin-bottom: 10px;
+  text-align: left;
 
   @media (min-width: $desktop-width) {
     width: auto;

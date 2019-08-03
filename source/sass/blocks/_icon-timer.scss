@@ -1,0 +1,28 @@
+.icon-timer {
+  position: relative;
+
+  width: 240px;
+  min-height: 275px;
+
+  background-image: url("../img/icon-timer-gray.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 239px auto;
+}
+
+.icon-timer__number {
+  position: absolute;
+  top: 55px;
+  left: 20px;
+
+  width: 172px;
+  height: 172px;
+
+  font-size: 96px;
+  line-height: 149px;
+  font-weight: 700;
+  color: $color-main;
+  border: 15px solid $color-main;
+  border-radius: 50%;
+  text-align: center;
+}

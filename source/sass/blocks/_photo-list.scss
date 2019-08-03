@@ -103,21 +103,3 @@
     margin-bottom: auto;
   }
 }
-
-.photo-list__image--tablet {
-  @media (max-width: 659px), (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.photo-list__image--desktop {
-  @media (max-width: 959px) {
-    display: none;
-  }
-}
-
-.photo-list__image--mobile {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
