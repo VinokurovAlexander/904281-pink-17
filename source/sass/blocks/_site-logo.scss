@@ -1,0 +1,17 @@
+.site-logo__mobile {
+  @media (min-width: 660px) {
+    display: none;
+  }
+}
+
+.site-logo__tablet {
+  @media (min-width: 960px), (max-width: 659px) {
+    display: none;
+  }
+}
+
+.site-logo__desktop {
+  @media (max-width: 959px) {
+    display: none;
+  }
+}

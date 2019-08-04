@@ -8,6 +8,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 239px auto;
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 345px;
+
+    background-size: 300px auto;
+  }
 }
 
 .icon-timer__number {
@@ -25,4 +32,16 @@
   border: 15px solid $color-main;
   border-radius: 50%;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    width: 220px;
+    height: 220px;
+
+    top: 71px;
+    left: 23px;
+
+    font-size: 120px;
+    line-height: 186px;
+    border-width: 17px;
+  }
 }
