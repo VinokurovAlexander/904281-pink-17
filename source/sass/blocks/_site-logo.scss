@@ -4,6 +4,12 @@
   }
 }
 
+.site-logo:active .site-logo__tablet path {
+  @media (max-width: $desktop-width) {
+    fill-opacity: 0.3;
+  }
+}
+
 .site-logo__mobile {
   @media (min-width: $tablet-width) {
     display: none;
