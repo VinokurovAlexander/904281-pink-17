@@ -1,3 +1,7 @@
+.site-logo:hover {
+  cursor: pointer;
+}
+
 .site-logo:hover .site-logo__tablet path {
   @media (max-width: $desktop-width) {
     fill: $color-main;
