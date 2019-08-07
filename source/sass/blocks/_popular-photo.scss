@@ -81,21 +81,3 @@
     right: 0;
   }
 }
-
-.popular-photo__image--mobile {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.popular-photo__image--tablet {
-  @media (max-width: 659px), (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.popular-photo__image--desktop {
-  @media (max-width: 959px) {
-    display: none;
-  }
-}

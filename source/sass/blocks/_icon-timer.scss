@@ -1,0 +1,61 @@
+.icon-timer {
+  position: relative;
+  width: 240px;
+  min-height: 275px;
+
+  background-image: url("../img/icon-timer-gray.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 239px auto;
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 345px;
+
+    background-size: 300px auto;
+  }
+}
+
+.icon-timer::after {
+  content: "";
+  position: absolute;
+
+  top: 55px;
+  left: 20px;
+
+  width: 173px;
+  height: 173px;
+
+  border: 15px solid $color-main;
+  border-radius: 50%;
+
+  @media (min-width: $desktop-width) {
+    width: 220px;
+    height: 220px;
+
+    top: 68px;
+    left: 22px;
+
+    border-width: 17px;
+  }
+}
+
+.icon-timer::before {
+  content: "24";
+  position: absolute;
+  top: 77px;
+  left: 64px;
+
+  font-size: 96px;
+  line-height: 149px;
+  font-weight: 700;
+  color: $color-main;
+
+  @media (min-width: $desktop-width) {
+    top: 96px;
+    left: 78px;
+
+    font-size: 120px;
+    line-height: 186px;
+  }
+}

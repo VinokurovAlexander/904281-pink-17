@@ -3,39 +3,37 @@
   padding-right: 19px;
   padding-bottom: 70px;
 
-  background-image: url("../img/icon-timer.svg");
-  background-repeat: no-repeat;
-  background-position: left 20px top 59px;
-  background-size: 36%;
+  background-color: #f2f2f2;
 
   @media (min-width: $mobile-width) {
     display: none;
   }
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: flex-end;
+    display: block;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: stretch;
-    padding-left: 130px;
-    padding-right: 130px;
-    padding-bottom: 113px;
-
-    background-color: #f2f2f2;
-    background-size: 25%;
-    background-position: left 129px top -3px;
+    padding: 0;
   }
 }
 
-.features__wrapper {
+.features__icon-timer {
+  margin: 0;
+  margin-top: 59px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-right: 65px;
+  }
+}
+
+.features__text {
   width: 312px;
   margin-top: 95px;
 
   @media (min-width: $desktop-width) {
-    width: 525px;
-    margin-left: 368px;
+    width: 530px;
   }
 }
 
@@ -50,20 +48,21 @@
 
   @media (min-width: $desktop-width) {
     width: 300px;
-    margin-bottom: 22px;
+    margin-bottom: 25px;
 
     line-height: 30px;
   }
 }
 
 .features__desc {
-  width: 280px;
+  width: 296px;
   margin: 0;
   margin-bottom: 10px;
+  text-align: left;
 
   @media (min-width: $desktop-width) {
-    width: auto;
-    margin-bottom: 30px;
+    width: 100%;
+    margin-bottom: 32px;
 
     font-size: 18px;
     line-height: 30px;
@@ -82,5 +81,24 @@
 .features__moto br {
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.features__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    padding-bottom: 65px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: stretch;
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
   }
 }
