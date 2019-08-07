@@ -23,7 +23,7 @@
 .site-logo__tablet {
   display: none;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     display: block;
   }
 }

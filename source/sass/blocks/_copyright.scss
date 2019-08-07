@@ -27,6 +27,10 @@
   }
 }
 
+.copyright__link path {
+  fill: $color-main;
+}
+
 .copyright__link:hover path {
   fill: $color-secondary;
 }
