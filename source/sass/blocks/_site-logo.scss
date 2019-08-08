@@ -1,17 +1,9 @@
+.site-logo {
+  fill: white;
+}
+
 .site-logo:hover {
   cursor: pointer;
-}
-
-.site-logo:hover .site-logo__tablet path {
-  @media (max-width: $desktop-width) {
-    fill: $color-main;
-  }
-}
-
-.site-logo:active .site-logo__tablet path {
-  @media (max-width: $desktop-width) {
-    fill-opacity: 0.3;
-  }
 }
 
 .site-logo__mobile {

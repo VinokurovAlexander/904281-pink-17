@@ -61,6 +61,10 @@
   }
 }
 
-.page-footer__logo:hover path {
+.page-footer__logo:hover .footer-logo {
   fill: $color-main;
+}
+
+.page-footer__logo:active .footer-logo {
+  fill-opacity: 0.3;
 }
