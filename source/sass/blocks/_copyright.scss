@@ -27,14 +27,14 @@
   }
 }
 
-.copyright__link path {
+.copyright__link .copyright__htmlacademy-logo {
   fill: $color-main;
 }
 
-.copyright__link:hover path {
+.copyright__link:hover .copyright__htmlacademy-logo {
   fill: $color-secondary;
 }
 
-.copyright__link:active path {
+.copyright__link:active .copyright__htmlacademy-logo {
   opacity: 0.3;
 }

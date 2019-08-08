@@ -81,3 +81,15 @@
     right: 0;
   }
 }
+
+.popular-photo picture {
+  height: 137px;
+
+  @media (min-width: $tablet-width) {
+    height: 509px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 506px;
+  }
+}

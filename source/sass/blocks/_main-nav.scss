@@ -49,7 +49,7 @@
   }
 }
 
-.main-nav__logo {
+.main-nav__logo-link {
   margin-top: 21px;
   margin-bottom: -1px;
   margin-left: 19px;
@@ -64,7 +64,17 @@
   }
 }
 
-.main-nav--opened .main-nav__logo {
+.main-nav__logo-link:hover .main-nav__logo-img {
+  fill: $color-main;
+}
+
+.main-nav__logo-link:active .main-nav__logo-img {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    fill-opacity: 0.3;
+  }
+}
+
+.main-nav--opened .main-nav__logo-link {
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
