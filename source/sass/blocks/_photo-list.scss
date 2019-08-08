@@ -103,3 +103,15 @@
     margin-bottom: auto;
   }
 }
+
+.photo-list__item picture {
+  height: 180px;
+
+  @media (min-width: $tablet-width) {
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+  }
+}

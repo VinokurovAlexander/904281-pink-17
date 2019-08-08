@@ -16,14 +16,30 @@
   font-size: 0;
 }
 
-.link-list__link--apple {
-  background: center center no-repeat url("../img/logo-apple.svg");
+.link-list_logo--apple {
+  margin-left: 2px;
+  margin-top: 2px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-top: 1px;
+  }
 }
 
-.link-list__link--google {
-  background: center top 11px no-repeat url("../img/logo-android.svg");
+.link-list_logo--android {
+  margin-left: 3px;
+  margin-top: 11px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-left: 5px;
+    margin-top: 5px;
+  }
 }
 
-.link-list__link--microsoft {
-  background: center top 15px no-repeat url("../img/logo-microsoft.svg");
+.link-list_logo--microsoft {
+  margin-left: 3px;
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin-top: 13px;
+  }
 }
