@@ -1,5 +1,10 @@
 .site-logo {
   fill: white;
+
+  @media (max-width: $tablet-width) {
+    width: 70px;
+    height: 22px;
+  }
 }
 
 .site-logo:hover {

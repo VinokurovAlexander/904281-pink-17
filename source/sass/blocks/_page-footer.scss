@@ -51,9 +51,9 @@
 .page-footer__logo {
   margin-bottom: 39px;
 
-  &:active {
-    opacity: 0.3;
-  }
+  // &:active {
+  //   opacity: 0.3;
+  // }
 
   @media (min-width: $tablet-width) {
     margin: 0;
