@@ -1,13 +1,10 @@
 .features {
+  display: none;
   padding-left: 19px;
   padding-right: 19px;
   padding-bottom: 70px;
 
   background-color: #f2f2f2;
-
-  @media (min-width: $mobile-width) {
-    display: none;
-  }
 
   @media (min-width: $tablet-width) {
     display: block;
