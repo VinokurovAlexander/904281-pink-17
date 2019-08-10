@@ -86,8 +86,9 @@
   margin: 0 auto;
   padding: 0;
   padding-top: 83px;
-  padding-bottom: 285px;
+  padding-bottom: 287px;
   padding-right: 20px;
+  padding-left: 20px;
 
   background-color: #f2f2f2;
   list-style: none;
@@ -116,7 +117,7 @@
   left: 0;
 
   width: 320px;
-  height: 30px;
+  height: 33px;
 
   background: linear-gradient(to bottom right, white 50%, #f2f2f2 50%);
 
@@ -137,7 +138,8 @@
   box-sizing: border-box;
   width: 280px;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 33px;
+  padding: 0 10px;
 
   text-align: center;
 
