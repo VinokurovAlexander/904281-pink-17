@@ -12,24 +12,16 @@
   margin: 0 auto;
 }
 
-#rate-basic:checked ~ .app-cost__slider label[for="rate-basic"],
-#rate-standart:checked ~ .app-cost__slider label[for="rate-standart"],
-#rate-unlim:checked ~ .app-cost__slider label[for="rate-unlim"] {
-  margin-top: 0;
+@include slider-label-style ("rate", ".app-cost__slider", 3);
 
-  background-color: transparent;
-  box-shadow: 0 0 0 3px $color-secondary;
-  opacity: 1;
-}
-
-#rate-basic:checked ~ .app-cost__table {
+#rate-1:checked ~ .app-cost__table {
   transform: translateX(0);
 }
 
-#rate-standart:checked ~ .app-cost__table {
+#rate-2:checked ~ .app-cost__table {
   transform: translateX(-31%);
 }
 
-#rate-unlim:checked ~ .app-cost__table {
+#rate-3:checked ~ .app-cost__table {
   transform: translateX(-62%);
 }

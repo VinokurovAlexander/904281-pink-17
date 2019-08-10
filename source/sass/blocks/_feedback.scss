@@ -48,7 +48,7 @@
   min-height: 219px;
 }
 
-.feedback_slider {
+.feedback__slider {
   align-self: center;
   order: 1;
 }
@@ -58,3 +58,5 @@
 #slide-3:checked ~ .feedback__list #feedback-3 {
   display: block;
 }
+
+@include slider-label-style("slide",".feedback__slider", 3);

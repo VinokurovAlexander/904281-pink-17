@@ -25,14 +25,3 @@
 .slider-controls__label:active {
   opacity: 0.1;
 }
-
-#slide-1:checked ~ .slider-controls label[for="slide-1"],
-#slide-2:checked ~ .slider-controls label[for="slide-2"],
-#slide-3:checked ~ .slider-controls label[for="slide-3"] {
-  margin-top: 0;
-
-  background-color: transparent;
-  box-shadow: 0 0 0 3px $color-secondary;
-  opacity: 1;
-
-}
