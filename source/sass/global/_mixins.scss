@@ -1,10 +1,13 @@
 // Миксин для стилизации круглых переключателей в слайдере
 // $field-name - идентификатор поля input
 // $slider-block-name - класс блока в котором расположены соответствующие label`ы
-// $input-count - количество инпутов
-@mixin slider-label-style($field-name, $slider-block-name, $input-count) {
+// $field-count - количество стилизуемых полей
+//
+// Пример селектора  #slide-1:checked ~ .feedback__slider label[for="#slide-1"]
 
-  @for $i from 1 through $input-count {
+@mixin slider-label-style($field-name, $slider-block-name, $field-count) {
+
+  @for $i from 1 through $field-count {
     ##{$field-name}-#{$i}:checked ~ #{$slider-block-name} label[for="#{$field-name}-#{$i}"] {
       margin-top: 0;
 

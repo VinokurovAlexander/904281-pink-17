@@ -1,10 +1,13 @@
 .app-cost {
+  padding-top: 64px;
+  padding-bottom: 50px;
+
   overflow: hidden;
   background-color: $color-bg;
 }
 
 .app-cost__table {
-  margin-bottom: 50px;
+  margin-bottom: 42px;
   transition: transform 0.7s ease;
 }
 

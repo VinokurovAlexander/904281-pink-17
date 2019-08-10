@@ -5,8 +5,9 @@
 
 .cost-table__cell {
   box-sizing: border-box;
-  min-width: 280px;
-  padding: 20px 0;
+  min-width: 279px;
+  padding-top: 15px;
+  padding-bottom: 16px;
   padding-left: 20px;
   padding-right: 18px;
 
@@ -17,6 +18,11 @@
 }
 
 .cost-table__cell-head {
+  padding-top: 18px;
+  padding-bottom: 21px;
+  padding-left: 20px;
+  padding-right: 18px;
+
   background-color: $color-secondary;
   color: #ffffff;
   border-top: none;
@@ -85,4 +91,20 @@
   @media (min-width: $tablet-width) {
     display: table-cell;
   }
+}
+
+.cost-table__cell--popular::after {
+  content: "Хит";
+  position: absolute;
+
+  width: 80px;
+  height: 30px;
+
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-image: url("../img/bg-hit.svg");
+  background-size: cover;
+  transform: rotate(-45deg);
 }

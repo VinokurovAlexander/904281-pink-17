@@ -11,26 +11,26 @@
 .icon-yes::before {
   content: "";
   position: absolute;
-  left: 50%;
-  bottom: 40%;
+  left: 40%;
+  bottom: 28%;
 
-  width: 25px;
-  height: 3px;
+  width: 31px;
+  height: 4px;
 
   background-color: #3dc644;
-  transform: translate(-22%, -63%) rotate(-45deg);
+  transform: translate(-27%, -63%) rotate(-45deg);
 
 }
 
 .icon-yes::after {
   content: "";
   position: absolute;
-  left: 15%;
-  top: 65%;
+  left: -10%;
+  top: 80%;
 
   width: 15px;
-  height: 3px;
+  height: 4px;
 
   background-color: #3dc644;
-  transform: translate(-15%,-65%) rotate(45deg);
+  transform: translate(10%,-80%) rotate(45deg);
 }

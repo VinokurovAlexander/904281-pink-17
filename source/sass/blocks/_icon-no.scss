@@ -13,19 +13,18 @@
   content: "";
   position: absolute;
   top: 46%;
-  left: -14%;
+  left: -30%;
 
   width: 35px;
-  height: 2px;
+  height: 3px;
 
   background-color: #f25b26;
-  transform: translate(14%, -46%);
 }
 
 .icon-no::before {
-  transform: rotate(45deg);
+  transform: translate(10%, -46%) rotate(45deg);
 }
 
 .icon-no::after {
-  transform: rotate(-45deg);
+  transform: translate(10%, -46%) rotate(-45deg);
 }
