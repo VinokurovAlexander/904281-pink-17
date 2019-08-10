@@ -1,0 +1,31 @@
+.icon-no {
+  position: relative;
+
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+
+  vertical-align: middle;
+}
+
+.icon-no::before,
+.icon-no::after {
+  content: "";
+  position: absolute;
+  top: 46%;
+  left: -14%;
+
+  width: 35px;
+  height: 2px;
+
+  background-color: #f25b26;
+  transform: translate(14%, -46%);
+}
+
+.icon-no::before {
+  transform: rotate(45deg);
+}
+
+.icon-no::after {
+  transform: rotate(-45deg);
+}

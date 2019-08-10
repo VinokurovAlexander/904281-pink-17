@@ -1,4 +1,34 @@
 .app-cost {
-  min-height: 100px;
+  overflow: hidden;
   background-color: $color-bg;
+}
+
+.app-cost__table {
+  margin-bottom: 50px;
+}
+
+.app-cost__slider {
+  margin: 0 auto;
+}
+
+#rate-basic:checked ~ .app-cost__slider label[for="rate-basic"],
+#rate-standart:checked ~ .app-cost__slider label[for="rate-standart"],
+#rate-unlim:checked ~ .app-cost__slider label[for="rate-unlim"] {
+  margin-top: 0;
+
+  background-color: transparent;
+  box-shadow: 0 0 0 3px $color-secondary;
+  opacity: 1;
+}
+
+#rate-basic:checked ~ .app-cost__table {
+  transform: translateX(0);
+}
+
+#rate-standart:checked ~ .app-cost__table {
+  transform: translateX(-31%);
+}
+
+#rate-unlim:checked ~ .app-cost__table {
+  transform: translateX(-62%);
 }

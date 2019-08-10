@@ -1,0 +1,36 @@
+.icon-yes {
+  position: relative;
+
+  display: inline-block;
+  width: 31px;
+  height: 21px;
+
+  vertical-align: middle;
+}
+
+.icon-yes::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 40%;
+
+  width: 25px;
+  height: 3px;
+
+  background-color: #3dc644;
+  transform: translate(-22%, -63%) rotate(-45deg);
+
+}
+
+.icon-yes::after {
+  content: "";
+  position: absolute;
+  left: 15%;
+  top: 65%;
+
+  width: 15px;
+  height: 3px;
+
+  background-color: #3dc644;
+  transform: translate(-15%,-65%) rotate(45deg);
+}

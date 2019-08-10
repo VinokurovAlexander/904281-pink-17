@@ -1,0 +1,88 @@
+.cost-table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.cost-table__cell {
+  box-sizing: border-box;
+  min-width: 280px;
+  padding: 20px 0;
+  padding-left: 20px;
+  padding-right: 18px;
+
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  color: $color-secondary;
+  line-height: 30px;
+}
+
+.cost-table__cell-head {
+  background-color: $color-secondary;
+  color: #ffffff;
+  border-top: none;
+  border-bottom: none;
+}
+
+.cost-table__cell-head:nth-child(2) {
+  border-left: none;
+  border-radius: 2px 0 0 2px;
+}
+
+.cost-table__cell-head:last-child {
+  border-right: none;
+  border-radius: 0px 2px 2px 0px;
+}
+
+.cost-table__cell-head--first {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: table-cell;
+
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.cost-table__title {
+  width: 105px;
+  margin: 0 auto;
+
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cost-table__price {
+  width: 115px;
+  margin: 0 auto;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cost-table__opiton-name {
+
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.cost-table__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cost-table__cell--first {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: table-cell;
+  }
+}

@@ -114,9 +114,9 @@
       </section>
       <section class="page-main__feedback feedback">
         <h2 class="visually-hidden">Блок с отзывами</h2>
-        <input class="visually-hidden" type="radio" name="slider-input" checked id="slide-1">
-        <input class="visually-hidden" type="radio" name="slider-input" id="slide-2">
-        <input class="visually-hidden" type="radio" name="slider-input" id="slide-3">
+        <input class="visually-hidden" type="radio" name="feedback-slider-input" checked id="slide-1">
+        <input class="visually-hidden" type="radio" name="feedback-slider-input" id="slide-2">
+        <input class="visually-hidden" type="radio" name="feedback-slider-input" id="slide-3">
         <div class="feedback_slider slider-controls">
           <label class="slider-controls__label" for="slide-1">
             <span class="visually-hidden">Отзыв №1</span>
@@ -138,7 +138,126 @@
         </ul>
       </section>
       <section class="page-main__app-cost app-cost">
+        <h2 class="visually-hidden">Блок с ценой приложения</h2>
+        <input class="visually-hidden" type="radio" name="app-cost-slider-input" id="rate-basic">
+        <input class="visually-hidden" type="radio" name="app-cost-slider-input" checked id="rate-standart">
+        <input class="visually-hidden" type="radio" name="app-cost-slider-input" id="rate-unlim">
 
+
+        <table class="app-cost__table cost-table">
+          <thead>
+            <tr>
+              <td class="cost-table__cell cost-table__cell-head cost-table__cell-head--first"></td>
+              <td class="cost-table__cell cost-table__cell-head">
+                <h3 class="cost-table__title">База</h3>
+                <p class="cost-table__price">1,99 USD</p>
+              </td>
+              <td class="cost-table__cell cost-table__cell-head">
+                <h3 class="cost-table__title">Стандарт</h3>
+                <p class="cost-table__price">3,99 USD</p>
+              </td>
+              <td class="cost-table__cell cost-table__cell-head">
+                <h3 class="cost-table__title">Анлим</h3>
+                <p class="cost-table__price">9,99 USD</p>
+              </td>
+            </tr>
+          </thead>
+          <tr>
+            <td class="cost-table__cell cost-table__cell--first">Розовый фильтр</td>
+            <td class="cost-table__cell">
+              <div class="cost-table__wrapper">
+                <span class="cost-table__opiton-name">Розовый фильтр</span>
+                <div class="cost-table__icon icon-yes">
+                  <span class="visually-hidden">Иконка</span>
+                </div>
+              </div>
+            </td>
+            <td class="cost-table__cell">
+              <div class="cost-table__wrapper">
+                <span class="cost-table__opiton-name">Розовый фильтр</span>
+                <div class="cost-table__icon icon-yes">
+                  <span class="visually-hidden">Иконка</span>
+                </div>
+              </div>
+            </td>
+            <td class="cost-table__cell">
+              <div class="cost-table__wrapper">
+                <span class="cost-table__opiton-name">Розовый фильтр</span>
+                <div class="cost-table__icon icon-yes">
+                  <span class="visually-hidden">Иконка</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="cost-table__cell cost-table__cell--first">Смайлики</td>
+            <td class="cost-table__cell">
+              <div class="cost-table__wrapper">
+                <span class="cost-table__opiton-name">Смайлики</span>
+                <div class="cost-table__icon icon-no">
+                  <span class="visually-hidden">Иконка</span>
+                </div>
+              </div>
+            </td>
+            <td class="cost-table__cell">
+              <div class="cost-table__wrapper">
+                <span class="cost-table__opiton-name">Смайлики</span>
+                <div class="cost-table__icon icon-yes">
+                  <span class="visually-hidden">Иконка</span>
+                </div>
+              </div>
+            </td>
+            <td class="cost-table__cell">
+              <div class="cost-table__wrapper">
+                <span class="cost-table__opiton-name">Смайлики</span>
+                <div class="cost-table__icon icon-yes">
+                  <span class="visually-hidden">Иконка</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="cost-table__cell cost-table__cell--first">Комментарии</td>
+            <td class="cost-table__cell">
+              <div class="cost-table__wrapper">
+                <span class="cost-table__opiton-name">Комментарии</span>
+                <div class="cost-table__icon icon-no">
+                  <span class="visually-hidden">Иконка</span>
+                </div>
+              </div>
+              </div>
+            </td>
+            <td class="cost-table__cell">
+              <div class="cost-table__wrapper">
+                <span class="cost-table__opiton-name">Комментарии</span>
+                <div class="cost-table__icon icon-no">
+                  <span class="visually-hidden">Иконка</span>
+                </div>
+              </div>
+              </div>
+            </td>
+            <td class="cost-table__cell">
+              <div class="cost-table__wrapper">
+                <span class="cost-table__opiton-name">Комментарии</span>
+                <div class="cost-table__icon icon-yes">
+                  <span class="visually-hidden">Иконка</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <div class="app-cost__slider slider-controls">
+          <label class="slider-controls__label" for="rate-basic">
+            <span class="visually-hidden">Базовый тариф</span>
+          </label>
+          <label class="slider-controls__label" for="rate-standart">
+            <span class="visually-hidden">Стандартный тариф</span>
+          </label>
+          <label class="slider-controls__label" for="rate-unlim">
+            <span class="visually-hidden">Тариф анлим</span>
+          </label>
+        </div>
       </section>
     </main>
 
