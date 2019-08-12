@@ -4,6 +4,8 @@
 }
 
 .cost-table__cell {
+  position: relative;
+
   box-sizing: border-box;
   min-width: 279px;
   padding-top: 15px;
@@ -91,20 +93,4 @@
   @media (min-width: $tablet-width) {
     display: table-cell;
   }
-}
-
-.cost-table__cell--popular::after {
-  content: "Хит";
-  position: absolute;
-
-  width: 80px;
-  height: 30px;
-
-  line-height: 30px;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-align: center;
-  background-image: url("../img/bg-hit.svg");
-  background-size: cover;
-  transform: rotate(-45deg);
 }

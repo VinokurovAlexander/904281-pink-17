@@ -1,0 +1,30 @@
+.hit::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1px;
+
+  width: 73px;
+  height: 73px;
+
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 102%;
+
+  // z-index: 50;
+}
+
+.hit::before {
+  content: "Хит";
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  z-index: 10;
+
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+
+}
