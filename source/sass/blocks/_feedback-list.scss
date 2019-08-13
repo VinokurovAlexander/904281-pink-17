@@ -1,5 +1,12 @@
 .feedback-list {
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
 
 .feedback-list__item {
@@ -14,10 +21,18 @@
   font-weight: 300;
   color: $color-main;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .feedback-list__item:nth-child(2) {
   margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+  }
 }
 
 .feedback-list__moto {
@@ -27,6 +42,10 @@
   line-height: 21px;
   font-weight: 700;
   color: $color-secondary;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 6px;
+  }
 }
 
 .feedback-list__link {
@@ -36,4 +55,9 @@
 
 .feddback-list__address {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 215px;
+    margin-top: 4px;
+  }
 }
