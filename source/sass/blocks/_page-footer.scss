@@ -13,8 +13,8 @@
     flex-direction: row;
     justify-content: space-between;
     width: 622px;
-    padding-left: 19px;
-    padding-right: 19px;
+    padding: 32px 19px;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -36,7 +36,9 @@
   @media (min-width: $tablet-width) {
     width: 175px;
     margin: 0;
-    padding-top: 3px;
+    padding-top: 7px;
+    padding-left: 11px;
+    padding-right: 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,13 +53,9 @@
 .page-footer__logo {
   margin-bottom: 39px;
 
-  // &:active {
-  //   opacity: 0.3;
-  // }
-
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding-bottom: 2px;
+    padding-bottom: 6px;
   }
 }
 
