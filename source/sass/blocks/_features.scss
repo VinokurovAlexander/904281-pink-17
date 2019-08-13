@@ -12,6 +12,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    background-color: $color-bg;
   }
 }
 
@@ -31,7 +32,9 @@
 
   @media (min-width: $desktop-width) {
     width: 530px;
+    margin-top: 93px;
   }
+
 }
 
 .features__moto {
@@ -97,5 +100,13 @@
     padding-left: 10px;
     padding-right: 10px;
     margin: 0 auto;
+  }
+}
+
+.features__link {
+  color: $color-main;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
   }
 }

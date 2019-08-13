@@ -10,7 +10,19 @@
     padding: 0;
     padding-top: 34px;
     padding-bottom: 75px;
+  }
 
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 187px;
+    padding-left: 130px;
+    padding-right: 130px;
+
+    background-image: url("../img/quote.svg");
+    background-repeat: no-repeat;
+    background-size: 79px auto;
+    background-position: center top 17%;
   }
 }
 
@@ -29,6 +41,11 @@
     width: 100%;
     height: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    bottom: -11px;
+    height: 81px;
+  }
 }
 
 .comments__list {
@@ -36,6 +53,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 820px;
   }
 }
 
@@ -58,6 +79,11 @@
 
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 225px;
+    font-size: 24px;
+  }
 }
 
 .comments__text {
@@ -70,6 +96,10 @@
     margin-bottom: 36px;
     font-size: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 710px;
+  }
 }
 
 .comments__item {
@@ -80,6 +110,10 @@
 .comments__slider {
   align-self: center;
   order: 1;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 #slide-1:checked ~ .comments__list #comment-1,
@@ -104,4 +138,12 @@
     font-weight: 400;
     color: $color-secondary;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.comments__arrow {
+  margin-top: 26px;
 }

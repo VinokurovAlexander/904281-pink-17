@@ -22,6 +22,10 @@
     min-width: 155px;
     padding: 8px 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 230px;
+  }
 }
 
 .cost-table__cell-head {
@@ -76,6 +80,10 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .cost-table__price {
@@ -91,6 +99,10 @@
   @media (min-width: $tablet-width) {
     margin-top: -3px;
     font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
   }
 }
 

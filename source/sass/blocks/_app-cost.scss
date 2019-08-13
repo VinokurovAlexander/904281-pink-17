@@ -9,6 +9,10 @@
     padding-top: 37px;
     padding-bottom: 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 77px;
+  }
 }
 
 .app-cost__table {

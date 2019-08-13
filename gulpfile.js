@@ -51,7 +51,10 @@ gulp.task("webp", function() {
   .pipe(gulp.dest("source/img"));
 });
 gulp.task("sprite", function() {
-  return gulp.src("source/img/logo-*.svg")
+  return gulp.src([
+    "source/img/logo-*.svg",
+    "source/img/icon-review-*.svg"
+  ])
   .pipe(svgstore({
     inlineSvg: true
   }))
