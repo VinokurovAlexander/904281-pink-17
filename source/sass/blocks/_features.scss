@@ -2,12 +2,12 @@
   display: none;
   padding-left: 19px;
   padding-right: 19px;
-  padding-bottom: 70px;
 
-  background-color: #f2f2f2;
+  background-color: $color-bg;
 
   @media (min-width: $tablet-width) {
     display: block;
+    background-color: #ffffff;
   }
 
   @media (min-width: $desktop-width) {

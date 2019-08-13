@@ -11,6 +11,16 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 102%;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+
+    width: 61px;
+    height: 61px;
+
+    overflow: hidden;
+    background-size: 118%;
+  }
 }
 
 .hit::before {
@@ -24,5 +34,10 @@
   color: #ffffff;
   text-transform: uppercase;
   transform: rotate(-45deg);
+
+  @media (min-width: $tablet-width) {
+    top: 3px;
+    left: 8px;
+  }
 
 }

@@ -4,6 +4,10 @@
 
   overflow: hidden;
   background-color: $color-bg;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 37px;
+  }
 }
 
 .app-cost__table {
@@ -13,6 +17,10 @@
 
 .app-cost__slider {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 @include slider-label-style ("rate", ".app-cost__slider", 3);
@@ -27,4 +35,12 @@
 
 #rate-3:checked ~ .app-cost__table {
   transform: translateX(-62%);
+}
+
+#rate-1:checked ~ .app-cost__table,
+#rate-2:checked ~ .app-cost__table,
+#rate-3:checked ~ .app-cost__table {
+  @media (min-width: $tablet-width) {
+    transform: translateX(0);
+  }
 }

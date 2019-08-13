@@ -14,9 +14,13 @@
   padding-right: 18px;
 
   background-color: #ffffff;
-  border: 1px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
   color: $color-secondary;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 154px;
+  }
 }
 
 .cost-table__cell-head {
@@ -29,6 +33,12 @@
   color: #ffffff;
   border-top: none;
   border-bottom: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 13px;
+    padding-bottom: 11px;
+    padding-right: 17px;
+  }
 }
 
 .cost-table__cell-head:nth-child(2) {
@@ -61,6 +71,10 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .cost-table__price {
@@ -72,12 +86,20 @@
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -3px;
+    font-size: 18px;
+  }
 }
 
 .cost-table__opiton-name {
-
   line-height: 30px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .cost-table__wrapper {
@@ -85,6 +107,10 @@
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+  }
 }
 
 .cost-table__cell--first {

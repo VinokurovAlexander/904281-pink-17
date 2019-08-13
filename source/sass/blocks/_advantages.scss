@@ -95,7 +95,7 @@
 
   @media (min-width: $tablet-width) {
     align-items: flex-end;
-    padding-top: 73px;
+    padding-top: 74px;
     padding-bottom: 44px;
   }
 
@@ -122,8 +122,6 @@
   background: linear-gradient(to bottom right, white 50%, #f2f2f2 50%);
 
   @media (min-width: $tablet-width) {
-    top: -2px;
-
     width: 660px;
     height: 50px;
   }
@@ -146,6 +144,7 @@
   @media (min-width: $tablet-width) {
     width: 310px;
     margin-bottom: 35px;
+    padding: 0;
 
     text-align: left;
   }
