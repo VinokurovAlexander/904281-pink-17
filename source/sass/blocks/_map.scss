@@ -5,4 +5,8 @@
   @media (min-width: $tablet-width) {
     height: 373px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 520px;
+  }
 }

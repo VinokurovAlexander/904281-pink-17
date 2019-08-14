@@ -7,6 +7,11 @@
     flex-wrap: wrap;
     width: 100%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .feedback-list__item {
@@ -24,6 +29,7 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
+    margin-bottom: 0;
   }
 }
 
@@ -32,6 +38,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    margin-bottom: 0;
   }
 }
 
@@ -45,6 +56,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
   }
 }
 
