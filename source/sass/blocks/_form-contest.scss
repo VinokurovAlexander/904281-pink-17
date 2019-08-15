@@ -1,43 +1,16 @@
 .form-contest {
-  padding: 0 20px;
+  width: 320px;
+  margin: 0 auto;
   padding-top: 45px;
 }
 
 .form-contest__moto {
   display: block;
-  margin-bottom: 33px;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 35px;
 
   line-height: 30px;
   font-weight: 400;
   text-align: center;
-}
-
-.form-contest__user-name {
-  display: flex;
-  padding: 0;
-
-  border: none;
-}
-
-.form-contest__label {
-  padding-left: 20px;
-  margin-bottom: 6px;
-
-  line-height: 30px;
-  color: $color-main;
-  text-transform: uppercase;
-}
-
-.form-contest__input {
-  box-sizing: border-box;
-  width: 280px;
-  padding: 15px 18px;
-  margin-bottom: 15px;
-
-  border: 2px solid #e7e7e7;
-  border-radius: 2px;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
-  color: $color-secondary;
 }

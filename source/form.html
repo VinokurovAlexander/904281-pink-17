@@ -50,13 +50,28 @@
           <b class="form-contest__moto">
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           </b>
-          <fieldset class="form-contest__user-name">
-            <label class="form-contest__label" for="sur-name">Фамилия:</label>
-            <input class="form-contest__input" type="text" name="sur-name" id="sur-name" value="Укажите фамилию *">
-            <label class="form-contest__label" for="name">Имя:</label>
-            <input class="form-contest__input" type="text" name="name" id="name" value="Введите ваше имя *">
-            <label class="form-contest__label" for="patronymic">Отчество:</label>
-            <input class="form-contest__input" type="text" name="patronymic" id="patronymic" value="Ну и отчество тоже">
+          <fieldset class="form-contest__user-name text-form fieldset">
+            <label class="text-form__label" for="sur-name">Фамилия:</label>
+            <input class="text-form__input" type="text" name="sur-name" id="sur-name" value="Укажите фамилию *">
+            <label class="text-form__label" for="name">Имя:</label>
+            <input class="text-form__input" type="text" name="name" id="name" value="Введите ваше имя *">
+            <label class="text-form__label" for="patronymic">Отчество:</label>
+            <input class="text-form__input" type="text" name="patronymic" id="patronymic" value="Ну и отчество тоже">
+          </fieldset>
+          <fieldset class="form-contest__achievements checkbox-form fieldset">
+            <h2 class="checkbox-form__title second-title">Ваши безбашенные достижения в путешествии</h2>
+              <input class="visually-hidden checkbox-form__input" for="shark-selfie" type="checkbox" name="shark-selfie" checked>
+              <label class="checkbox-form__label" id="shark-selfie">Сделал селфи с акулой</label>
+              <input class="visually-hidden checkbox-form__input" type="checkbox" name="sunburn" id="sunburn" checked>
+              <label class="checkbox-form__label" for="sunburn">Обгорел на пляже</label>
+              <input class="visually-hidden checkbox-form__input" type="checkbox" name="chuck-norris" id="chuck-norris">
+              <label class="checkbox-form__label" for="chuck-norris">Видел Чака Норриса</label>
+              <input class="visually-hidden checkbox-form__input" type="checkbox" name="souvenirs" id="souvenirs">
+              <label class="checkbox-form__label" for="souvenirs">Накупил сувениров</label>
+              <input class="visually-hidden checkbox-form__input" type="checkbox" name="tower" id="tower" checked>
+              <label class="checkbox-form__label" for="tower">Удержал башню</label>
+              <input class="visually-hidden checkbox-form__input" type="checkbox" name="achievements" id="hotel-mayhem">
+              <label class="checkbox-form__label" for="hotel-mayhem">Разгромил отель</label>
           </fieldset>
         </form>
       </section>
