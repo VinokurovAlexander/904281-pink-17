@@ -51,6 +51,16 @@
   background-color: #ffffff;
 }
 
+.form-input {
+  &:hover {
+    border-color: $color-secondary;
+  }
+
+  &:active {
+    border-color: $color-main;
+  }
+}
+
 .form__input--checkbox:checked + .form__label--checkbox:after {
   content: "";
   position: absolute;

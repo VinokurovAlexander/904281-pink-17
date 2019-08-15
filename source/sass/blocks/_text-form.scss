@@ -17,6 +17,10 @@
   line-height: 30px;
   color: $color-main;
   text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .text-form__input {
@@ -36,4 +40,26 @@
     margin-bottom: 0;
   }
 
+  &:hover {
+    border-color: $color-secondary;
+  }
+
+  &:active {
+    border-color: $color-main;
+  }
+
+}
+
+.text-form__textarea {
+  width: 100%;
+  min-height: 198px;
+  margin: 0;
+  padding: 0;
+
+  border: 2px solid #e5e5e5;
+}
+
+.text-form__label--emotions {
+  padding-left: 47px;
+  margin-bottom: 8px;
 }

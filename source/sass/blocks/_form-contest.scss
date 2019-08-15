@@ -18,3 +18,27 @@
 .form-contest__user-name {
   padding-top: 0;
 }
+
+.form-contest__button {
+  margin-top: 6px;
+  margin-bottom: 35px;
+}
+
+.form-contest__text {
+  width: 185px;
+  padding: 0;
+  margin: 0;
+  margin-left: 69px;
+
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form-contest__symbol {
+  display: inline-block;
+  margin-top: -4px;
+
+  vertical-align: top;
+  color: $color-main;
+  font-size: 17px;
+}

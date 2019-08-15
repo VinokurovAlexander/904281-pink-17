@@ -1,0 +1,20 @@
+.submit-button {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  margin: 0 auto;
+  padding: 17px 15px;
+
+  border: none;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #2aab6d;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
