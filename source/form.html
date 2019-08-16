@@ -46,20 +46,20 @@
       </header>
       <section class="page-main__form form-contest">
         <h2 class="visually-hidden">Блок с формой отправки истории для конкурса</h2>
-        <form action="index.html" method="post">
+        <form class="form-contest__form" action="index.html" method="post">
           <b class="form-contest__moto">
-            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span>
           </b>
           <fieldset class="form-contest__user-name text-form">
             <label class="text-form__label" for="sur-name">Фамилия:</label>
-            <input class="text-form__input" type="text" name="sur-name" id="sur-name" value="Укажите фамилию *">
+            <input class="text-form__input" type="text" name="sur-name" id="sur-name" value="Укажите фамилию *" required>
             <label class="text-form__label" for="name">Имя:</label>
-            <input class="text-form__input" type="text" name="name" id="name" value="Введите ваше имя *">
+            <input class="text-form__input" type="text" name="name" id="name" value="Введите ваше имя *" required>
             <label class="text-form__label" for="patronymic">Отчество:</label>
             <input class="text-form__input" type="text" name="patronymic" id="patronymic" value="Ну и отчество тоже">
           </fieldset>
           <fieldset class="form-contest__achievements form">
-            <h2 class="form__title second-title">Ваши безбашенные достижения в путешествии</h2>
+            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
               <input class="visually-hidden form__input form__input--checkbox" for="shark-selfie" type="checkbox" name="shark-selfie" checked>
               <label class="form__label form__label--checkbox" id="shark-selfie">Сделал селфи с акулой</label>
               <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="sunburn" id="sunburn" checked>
@@ -74,14 +74,13 @@
               <label class="form__label form__label--checkbox" for="hotel-mayhem">Разгромил отель</label>
           </fieldset>
           <fieldset class="form-contest__user-contacts text-form">
-            <h2 class="visually-hidden">Форма для отправки контактов пользователя</h2>
             <label class="text-form__label" for="telephone">Номер телефона</label>
-            <input class="text-form__input" type="tel" name="telephone" id="telephone" value="Номер, пожалуйста">
+            <input class="text-form__input" type="tel" name="telephone" id="telephone" value="Номер, пожалуйста" required>
             <label class="text-form__label" for="mail">Адрес почты</label>
-            <input class="text-form__input" type="email" name="mail" id="mail" value="Введите почту *">
+            <input class="text-form__input" type="email" name="mail" id="mail" value="Введите почту *" required>
           </fieldset>
           <fieldset class="form-contest__app-platform form">
-            <h2 class="form__title form__title--radio second-title">С каким приложением путешествовали?</h2>
+            <legend class="form__legend">С каким приложением путешествовали?</legend>
             <input class="visually-hidden form__input form__input--radio" type="radio" name="app-platform" id="ios" checked>
             <label class="form__label form__label--radio" for="ios">Pink для iOS</label>
             <input class="visually-hidden form__input form__input--radio" type="radio" name="app-platform" id="android">
@@ -93,10 +92,12 @@
             <label class="text-form__label text-form__label--emotions" for="emotions-text">Опишите свои эмоции</label>
             <textarea class="text-form__textarea" name="emotions" id="emotions-text" value="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <button class="form-contest__button submit-button" type="submit">Отправить форму</button>
-          <p class="form-contest__text">
-            <span class="form-contest__symbol">&#8727;</span> &#8212; обязательные поля
-          </p>
+          <div class="form-contest__wrapper">
+            <button class="form-contest__button submit-button" type="submit">Отправить форму</button>
+            <p class="form-contest__text">
+              <span class="form-contest__symbol">&#8727;</span> &#8212; обязательные поля
+            </p>
+          </div>
         </form>
       </section>
     </main>

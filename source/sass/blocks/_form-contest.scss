@@ -2,21 +2,47 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 45px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-top: 93px;
+  }
 }
 
 .form-contest__moto {
   display: block;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 
   line-height: 30px;
   font-weight: 400;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 510px;
+    margin-bottom: 72px;
+
+    font-size: 18px;
+  }
+
+  span {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+  }
+
+
 }
 
 .form-contest__user-name {
   padding-top: 0;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .form-contest__button {
@@ -41,4 +67,40 @@
   vertical-align: top;
   color: $color-main;
   font-size: 17px;
+}
+
+.form-contest__form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-contest__app-platform {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.form-contest__user-contacts {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.form-contest__achievements {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+.form-contest__emtions {
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
+}
+
+.form-contest__wrapper {
+  @media (min-width: $tablet-width) {
+    order: 6;
+  }
 }
