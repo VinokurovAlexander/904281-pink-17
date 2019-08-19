@@ -1,0 +1,16 @@
+.form-contacts {
+  padding-top: 33px;
+  padding-bottom: 40px;
+}
+
+.form-contacts__legend {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.form-contacts__wrapper:first-of-type {
+  margin-bottom: 17px;
+}

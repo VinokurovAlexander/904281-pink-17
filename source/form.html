@@ -50,46 +50,55 @@
           <b class="form-contest__moto">
             Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span>
           </b>
-          <fieldset class="form-contest__user-name form form--user-name">
-            <label class="form__label form__label--text" for="sur-name">Фамилия:</label>
+
+          <fieldset class="form form-username">
+            <label class="form__label form__label--main" for="sur-name">Фамилия:</label>
             <input class="form__input" type="text" name="sur-name" id="sur-name" value="Укажите фамилию *" required>
-            <label class="form__label form__label--text" for="name">Имя:</label>
+            <label class="form__label form__label--main" for="name">Имя:</label>
             <input class="form__input" type="text" name="name" id="name" value="Введите ваше имя *" required>
-            <label class="form__label form__label--text" for="patronymic">Отчество:</label>
+            <label class="form__label form__label--main" for="patronymic">Отчество:</label>
             <input class="form__input" type="text" name="patronymic" id="patronymic" value="Ну и отчество тоже">
           </fieldset>
-          <fieldset class="form-contest__achievements form form--checkbox">
-            <legend class="form__legend form__legend--checkbox">Ваши безбашенные достижения в путешествии</legend>
-              <input class="visually-hidden form__input form__input--checkbox" for="shark-selfie" type="checkbox" name="shark-selfie" checked>
-              <label class="form__label form__label--checkbox" id="shark-selfie">Сделал селфи с акулой</label>
-              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="sunburn" id="sunburn" checked>
-              <label class="form__label form__label--checkbox" for="sunburn">Обгорел на пляже</label>
-              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="chuck-norris" id="chuck-norris">
-              <label class="form__label form__label--checkbox" for="chuck-norris">Видел Чака Норриса</label>
-              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="souvenirs" id="souvenirs">
-              <label class="form__label form__label--checkbox" for="souvenirs">Накупил сувениров</label>
-              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="tower" id="tower" checked>
-              <label class="form__label form__label--checkbox" for="tower">Удержал башню</label>
-              <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="achievements" id="hotel-mayhem">
-              <label class="form__label form__label--checkbox" for="hotel-mayhem">Разгромил отель</label>
+
+          <fieldset class="form form-achievements">
+            <legend class="form__legend form-achievements__legend">Ваши безбашенные достижения в путешествии</legend>
+              <input class="visually-hidden form__input" id="shark-selfie" type="checkbox" name="shark-selfie" checked>
+              <label class="form__label form__label--secondary form__label--checkbox" for="shark-selfie">Сделал селфи с акулой</label>
+              <input class="visually-hidden form__input" type="checkbox" name="sunburn" id="sunburn" checked>
+              <label class="form__label form__label--secondary form__label--checkbox" for="sunburn">Обгорел на пляже</label>
+              <input class="visually-hidden form__input" type="checkbox" name="chuck-norris" id="chuck-norris">
+              <label class="form__label form__label--secondary form__label--checkbox" for="chuck-norris">Видел Чака Норриса</label>
+              <input class="visually-hidden form__input" type="checkbox" name="souvenirs" id="souvenirs">
+              <label class="form__label form__label--secondary form__label--checkbox" for="souvenirs">Накупил сувениров</label>
+              <input class="visually-hidden form__input" type="checkbox" name="tower" id="tower" checked>
+              <label class="form__label form__label--secondary form__label--checkbox" for="tower">Удержал башню</label>
+              <input class="visually-hidden form__input" type="checkbox" name="achievements" id="hotel-mayhem">
+              <label class="form__label form__label--secondary form__label--checkbox" for="hotel-mayhem">Разгромил отель</label>
           </fieldset>
-          <fieldset class="form-contest__user-contacts form">
-            <legend class="form__legend form__legend--user-contacts">Контактная информация</legend>
-            <label class="form__label form__label--text" for="telephone">Номер телефона</label>
-            <input class="form__input" type="tel" name="telephone" id="telephone" value="Номер, пожалуйста" required>
-            <label class="form__label form__label--text" for="mail">Адрес почты</label>
-            <input class="form__input" type="email" name="mail" id="mail" value="Введите почту *" required>
+
+          <fieldset class="form form-contacts">
+            <legend class="form__legend form-contacts__legend">Контактная информация</legend>
+            <div class="form-contacts__wrapper">
+              <label class="form__label form__label--main" for="telephone">Номер телефона</label>
+              <input class="form__input" type="tel" name="telephone" id="telephone" value="Номер, пожалуйста" required>
+            </div>
+            <div class="form-contacts__wrapper">
+              <label class="form__label form__label--main" for="mail">Адрес почты</label>
+              <input class="form__input" type="email" name="mail" id="mail" value="Введите почту *" required>
+            </div>
           </fieldset>
-          <fieldset class="form-contest__app-platform form form--radio">
-            <legend class="form__legend form__legend--radio">С каким приложением путешествовали?</legend>
-            <input class="visually-hidden form__input form__input--radio" type="radio" name="app-platform" id="ios" checked>
-            <label class="form__label form__label--radio" for="ios">Pink для iOS</label>
-            <input class="visually-hidden form__input form__input--radio" type="radio" name="app-platform" id="android">
-            <label class="form__label form__label--radio" for="android">Pink на Android</label>
-            <input class="visually-hidden form__input form__input--radio" type="radio" name="app-platform" id="windows">
-            <label class="form__label form__label--radio" for="windows">Windows Phone</label>
+
+          <fieldset class="form form-app-platform">
+            <legend class="form__legend">С каким приложением путешествовали?</legend>
+            <input class="visually-hidden form__input" type="radio" name="app-platform" id="ios" checked>
+            <label class="form__label form__label--secondary form__label--radio form-app-platform__label" for="ios">Pink для iOS</label>
+            <input class="visually-hidden form__input" type="radio" name="app-platform" id="android">
+            <label class="form__label form__label--secondary form__label--radio form-app-platform__label" for="android">Pink на Android</label>
+            <input class="visually-hidden form__input" type="radio" name="app-platform" id="windows">
+            <label class="form__label form__label--secondary form__label--radio form-app-platform__label" for="windows">Windows Phone</label>
           </fieldset>
-          <fieldset class="form-contest__emtions form form--textarea">
+
+          <fieldset class="form form-emotions">
             <legend class="form__legend">Опишите свои эмоции</legend>
             <textarea class="form__textarea" name="emotions" id="emotions-text" value="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
