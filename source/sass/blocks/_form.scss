@@ -1,7 +1,7 @@
 .form {
   position: relative;
 
-  padding-top: 115px;
+  padding-top: 118px;
   padding-bottom: 47px;
   padding-left: 20px;
   padding-right: 20px;
@@ -108,9 +108,9 @@
 
 .form__legend {
   position: absolute;
-  top: 6%;
+  top: 7%;
   left: 50%;
-  transform: translate(-50%, -6%);
+  transform: translate(-50%, -7%);
 
   width: 220px;
   padding: 0;
@@ -120,4 +120,13 @@
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.form--radio {
+  padding-top: 116px;
+}
+
+.form__legend--radio {
+  top: 13%;
+  transform: translate(-50%,-13%);
 }
