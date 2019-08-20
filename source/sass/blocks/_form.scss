@@ -19,6 +19,12 @@
 
     border: 2px solid #e6e6e6;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .form__input {
@@ -54,6 +60,14 @@
 
     &[name="name"] {
       width: 565px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 340px;
+
+    &[name="name"] {
+      width: 380px;
     }
   }
 }
