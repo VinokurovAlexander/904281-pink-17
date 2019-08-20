@@ -5,11 +5,16 @@
 .form-add-photo__list {
   margin-bottom: 32px;
 }
+
 .form-add-photo__button {
   width: 280px;
   margin: 0 auto;
+}
 
-  background-color: #f2f2f2;
+.form-add-photo__button--add {
+  margin-bottom: 13px;
+
+  background-color: $color-bg;
   color: $color-main;
   border-color: $color-main;
 
@@ -24,18 +29,34 @@
 }
 
 .form-add-photo__button--cancel {
-  color: rgba(40, 54, 69, 0.1);
-  border-color: rgba(40, 54, 69, 0.1);
+  color: $color-secondary;
+  border-color: $color-secondary;
+  opacity: 0.1;
 
   &:hover {
-    background-color: #f2f2f2;
-    color: rgba(40, 54, 69, 0.3);
-    border-color: rgba(40, 54, 69, 0.3);
+    color: $color-secondary;
+    opacity: 0.3;
   }
 
   &:active {
-    // background-color: rgba(40, 54, 69, 0.3);
-    background-color: #b5b9be;
-    opacity: 1;
+    background-color: $color-secondary;
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
   }
+}
+
+.form-add-photo__scale {
+  margin-bottom: 74px;
+}
+
+.form-add-photo__scale::after {
+  content: "";
+  position: absolute;
+  left: -40px;
+  bottom: -36px;
+
+  width: 320px;
+  height: 2px;
+
+  background-color: #dddfe0;
 }

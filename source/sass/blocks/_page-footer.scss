@@ -5,7 +5,7 @@
 
   width: 320px;
   margin: 0 auto;
-  padding: 49px 0;
+  padding: 37px 0;
 
   background-color: #ffffff;
 
@@ -14,7 +14,6 @@
     justify-content: space-between;
     width: 622px;
     padding: 32px 19px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -28,6 +27,10 @@
   @media (max-width: 659px) {
     display: none;
   }
+}
+
+.page-footer--form-page {
+  padding: 50px 0;
 }
 
 .page-footer__list {
