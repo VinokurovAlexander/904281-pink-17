@@ -1,9 +1,13 @@
-.form-add-photo__image {
-  margin-bottom: 34px;
+.form-add-photo {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
-.form-add-photo__list {
-  margin-bottom: 32px;
+.form-add-photo__image {
+  margin-bottom: 34px;
 }
 
 .form-add-photo__button {
@@ -45,18 +49,12 @@
   }
 }
 
-.form-add-photo__scale {
-  margin-bottom: 74px;
+.form-add-photo__list {
+  margin-bottom: 39px;
 }
 
-.form-add-photo__scale::after {
-  content: "";
-  position: absolute;
-  left: -40px;
-  bottom: -36px;
-
-  width: 320px;
-  height: 2px;
-
-  background-color: #dddfe0;
+.form-add-photo__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }

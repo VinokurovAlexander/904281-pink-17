@@ -196,28 +196,36 @@
 
             <img class="form-add-photo__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фотография дороги в зимнем лесу">
           </picture>
-          <ul class="form-add-photo__list editor-list list">
-            <li class="editor-list__item">
-              <svg class="editor-list__icon editor-list__icon--active" width="44" height="44">
-                <use xlink:href="#icon-editor-crop"></use>
-              </svg>
-            </li>
-            <li class="editor-list__item editor-list__item--fill">
-              <svg class="editor-list__icon" width="48" height="43">
-                <use xlink:href="#icon-editor-fill"></use>
-              </svg>
-            </li>
-            <li class="editor-list__item editor-list__item--contrast">
-              <svg class="editor-list__icon" width="32" height="32">
-                <use xlink:href="#icon-editor-contrast"></use>
-              </svg>
-            </li>
-          </ul>
-          <div class="form-add-photo__scale scale">
-            <div class="scale__range-toggle"></div>
+          <div class="form-add-photo__wrapper">
+            <ul class="form-add-photo__list editor-list list">
+              <li class="editor-list__item editor-list__item--active">
+                <svg class="editor-list__icon editor-list__icon--active" width="44" height="44">
+                  <use xlink:href="#icon-editor-crop"></use>
+                </svg>
+                <div class="editor-list__scale editor-list__scale--active scale">
+                  <div class="scale__range-toggle"></div>
+                </div>
+              </li>
+              <li class="editor-list__item editor-list__item--fill">
+                <svg class="editor-list__icon" width="48" height="43">
+                  <use xlink:href="#icon-editor-fill"></use>
+                </svg>
+                <div class="editor-list__scale scale">
+                  <div class="scale__range-toggle"></div>
+                </div>
+              </li>
+              <li class="editor-list__item editor-list__item--contrast">
+                <svg class="editor-list__icon" width="32" height="32">
+                  <use xlink:href="#icon-editor-contrast"></use>
+                </svg>
+                <div class="editor-list__scale scale">
+                  <div class="scale__range-toggle"></div>
+                </div>
+              </li>
+            </ul>
+            <button class="button form-add-photo__button form-add-photo__button--add">Запостить</button>
+            <button class="button form-add-photo__button form-add-photo__button--cancel">Отмена</button>
           </div>
-          <button class="button form-add-photo__button form-add-photo__button--add">Запостить</button>
-          <button class="button form-add-photo__button form-add-photo__button--cancel">Отмена</button>
         </form>
       </section>
     </main>
