@@ -3,8 +3,19 @@
   padding-bottom: 47px;
 
   background-color: $color-bg;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 61px;
+
+    background-color: #ffffff;
+  }
 }
 
 .form-app-platform__label {
   margin-bottom: 45px;
+
+  // @media (min-width: $tablet-width) {
+  //   padding-left: 59px;
+  // }
 }

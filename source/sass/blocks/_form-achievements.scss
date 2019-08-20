@@ -3,6 +3,12 @@
   padding-bottom: 49px;
 
   background-color: $color-bg;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 56px;
+    background-color: #ffffff;
+  }
 }
 
 .form-achievements__legend {
