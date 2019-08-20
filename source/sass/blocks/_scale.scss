@@ -1,0 +1,31 @@
+.scale {
+  position: relative;
+
+  width: 240px;
+  height: 2px;
+  margin: 0 auto;
+
+  background-color: $color-secondary
+}
+
+.scale__range-toggle {
+  content: "";
+  position: absolute;
+  right: 34px;
+  top: -5px;
+
+  width: 10px;
+  height: 10px;
+
+  background-color: $color-bg;
+  border: 2px solid $color-main;
+  border-radius: 50%;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: $color-main;
+  }
+}

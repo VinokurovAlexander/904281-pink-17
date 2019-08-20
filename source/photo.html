@@ -182,6 +182,43 @@
             </div>
           </li>
         </ul>
+        <p class="user-photos__moto user-photos__moto--footer">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+      </section>
+      <section class="user-photos__add-photo">
+        <form class="form-add-photo" action="index.html" method="post">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+
+            <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
+
+            <img class="form-add-photo__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Фотография дороги в зимнем лесу">
+          </picture>
+          <ul class="form-add-photo__list editor-list list">
+            <li class="editor-list__item">
+              <svg class="editor-list__icon editor-list__icon--active" width="44" height="44">
+                <use xlink:href="#icon-editor-crop"></use>
+              </svg>
+            </li>
+            <li class="editor-list__item editor-list__item--fill">
+              <svg class="editor-list__icon" width="48" height="43">
+                <use xlink:href="#icon-editor-fill"></use>
+              </svg>
+            </li>
+            <li class="editor-list__item editor-list__item--contrast">
+              <svg class="editor-list__icon" width="32" height="32">
+                <use xlink:href="#icon-editor-contrast"></use>
+              </svg>
+            </li>
+          </ul>
+          <div class="form-add-photo__scale scale">
+            <div class="scale__range-toggle"></div>
+          </div>
+          <button class="button form-add-photo__button">Запостить</button>
+          <button class="button form-add-photo__button form-add-photo__button--cancel">Отмена</button>
+        </form>
       </section>
     </main>
 

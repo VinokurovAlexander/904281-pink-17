@@ -1,0 +1,32 @@
+.editor-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 210px;
+  margin: 0 auto;
+}
+
+.editor-list__icon {
+  fill: $color-secondary;
+  fill-opacity: 0.3;
+
+  &:hover {
+    fill-opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+.editor-list__icon--active {
+  fill: $color-main;
+  fill-opacity: 1;
+}
+
+.editor-list__item--fill {
+  padding-right: 6px;
+  padding-top: 3px;
+}
+
+.editor-list__item--contrast {
+  padding-top: 8px;
+  padding-right: 10px;
+}
