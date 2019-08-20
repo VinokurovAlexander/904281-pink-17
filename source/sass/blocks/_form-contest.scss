@@ -69,6 +69,10 @@
     max-width: 200px;
     margin-top: 19px;
   }
+
+  @media (min-width: $tablet-width) {
+    max-width: 320px;
+  }
 }
 
 .form-contest__symbol {
@@ -95,7 +99,7 @@
 
 .form-contest__app-platform {
   @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
+    margin-bottom: 53px;
     order: 2;
   }
 }
@@ -110,7 +114,7 @@
 .form-contest__achievements {
   @media (min-width: $tablet-width) {
     order: 4;
-    margin-bottom: 57px;
+    margin-bottom: 53px;
   }
 }
 
@@ -118,6 +122,10 @@
   @media (min-width: $tablet-width) {
     order: 5;
     margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
   }
 }
 
@@ -127,5 +135,11 @@
     justify-content: space-between;
     padding: 0 20px;
     order: 6;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

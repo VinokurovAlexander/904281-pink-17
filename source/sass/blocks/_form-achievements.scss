@@ -5,12 +5,49 @@
   background-color: $color-bg;
 
   @media (min-width: $tablet-width) {
-    padding-top: 48px;
+    padding-top: 49px;
     padding-bottom: 56px;
     background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 57px;
+    padding-bottom: 47px;
   }
 }
 
 .form-achievements__legend {
   top: 7%;
+}
+
+.form-achievements__label {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+  }
+}
+
+.form-achievements__wrapper-main {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.form-achievements__wrapper {
+  margin-bottom: 52px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    height: 125px;
+    margin-right: 57px;
+    margin-bottom: 0;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
 }
