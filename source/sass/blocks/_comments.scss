@@ -1,9 +1,6 @@
 .comments {
   position: relative;
 
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
   padding: 42px 20px;
 
   @media (min-width: $tablet-width) {
@@ -13,16 +10,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
     padding-top: 187px;
-    padding-left: 130px;
-    padding-right: 130px;
 
     background-image: url("../img/quote.svg");
     background-repeat: no-repeat;
     background-size: 79px auto;
     background-position: center top 17%;
+  }
+}
+
+.comments__wrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
   }
 }
 
