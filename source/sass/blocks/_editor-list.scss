@@ -11,7 +11,7 @@
     box-sizing: border-box;
     width: 100%;
     margin: 0;
-    padding-left: 26px;
+    padding-bottom: 49px;
   }
 }
 
@@ -93,10 +93,21 @@
 .editor-list__scale {
   display: none;
   margin-bottom: 74px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-bottom: 0;
+  }
 }
 
-.editor-list__scale--active {
+.editor-list__scale--crop {
   display: block;
+}
+
+.editor-list__scale--contrast {
+  @media (min-width: $tablet-width) {
+    top: -5px;
+  }
 }
 
 .editor-list__item--active::after {

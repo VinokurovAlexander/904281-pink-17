@@ -13,6 +13,11 @@
 .form-add-photo__button {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+    margin: 0;
+  }
 }
 
 .form-add-photo__button--add {
@@ -21,6 +26,10 @@
   background-color: $color-bg;
   color: $color-main;
   border-color: $color-main;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+  }
 
   &:hover {
     background-color: $color-main;
@@ -51,10 +60,16 @@
 
 .form-add-photo__list {
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form-add-photo__wrapper {
   @media (min-width: $tablet-width) {
+    box-sizing: border-box;
     width: 300px;
+    padding-left: 26px;
   }
 }

@@ -74,3 +74,9 @@
 .page-footer__logo:active .footer-logo {
   fill-opacity: 0.3;
 }
+
+.page-footer--photo-page {
+  @media (min-width: $tablet-width) {
+    padding: 29px 19px;
+  }
+}

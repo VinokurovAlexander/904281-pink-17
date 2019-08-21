@@ -46,3 +46,15 @@
     right: 41px;
   }
 }
+
+.scale__range-toggle--contrast {
+  @media (min-width: $tablet-width) {
+    right: 89px;
+  }
+}
+
+.scale__range-toggle--fill {
+  @media (min-width: $tablet-width) {
+    left: 24px;
+  }
+}
