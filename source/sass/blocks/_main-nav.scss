@@ -83,6 +83,10 @@
 }
 
 .main-nav--opened .main-nav__toggle {
+  margin-bottom: 24px;
+}
+
+.main-nav--opened .main-nav__toggle {
   &::after,
   &::before {
     content: "";
@@ -170,7 +174,7 @@
   margin-bottom: -66px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: -114px;
+    margin-bottom: -111px;
   }
 
   @media (min-width: $desktop-width) {

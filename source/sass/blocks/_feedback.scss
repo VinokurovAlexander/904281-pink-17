@@ -24,7 +24,7 @@
   display: block;
   width: 230px;
   margin: 0 auto;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 
   font-size: 24px;
   line-height: 28px;
@@ -42,7 +42,7 @@
 
   @media (min-width: $desktop-width) {
     width: 480px;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
 
     font-size: 50px;
     line-height: 60px;
@@ -53,26 +53,30 @@
   content: "";
   position: absolute;
   left: 0;
-  bottom: -35px;
+  bottom: -40px;
   z-index: 10;
 
   display: block;
   width: 320px;
-  height: 35px;
+  height: 40px;
 
   background-image: url("../img/bg-triangle-white-footer.svg");
-  background-size: contain;
+  background-size: 113%;
   background-position: center top;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    bottom: -67px;
+    bottom: -95px;
+
     width: 100%;
-    height: 67px;
+    height: 95px;
+
+    background-size: 134%;
   }
 
   @media (min-width: $desktop-width) {
     bottom: -130px;
     height: 130px;
+    background-size: 95%;
   }
 }

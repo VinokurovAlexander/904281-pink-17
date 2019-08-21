@@ -1,7 +1,10 @@
 .comments {
   position: relative;
 
-  padding: 42px 20px;
+  padding-top: 42px;
+  padding-bottom: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -105,6 +108,7 @@
 
   @media (min-width: $desktop-width) {
     width: 710px;
+    margin-bottom: 38px;
   }
 }
 
