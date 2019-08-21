@@ -183,9 +183,13 @@
 }
 
 .main-nav--nojs .main-nav__list {
-  display: block;
+  @media (max-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .main-nav--nojs {
-  background-color: $color-secondary;
+  @media (max-width: $desktop-width) {
+    background-color: $color-secondary;
+  }
 }

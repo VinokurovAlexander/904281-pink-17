@@ -50,3 +50,9 @@
     transform: translateX(0);
   }
 }
+
+.app-cost__input {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

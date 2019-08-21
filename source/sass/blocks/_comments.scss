@@ -147,3 +147,9 @@
 .comments__arrow {
   margin-top: 26px;
 }
+
+.comments__input {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

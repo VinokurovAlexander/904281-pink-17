@@ -1,9 +1,10 @@
-// Миксин для стилизации круглых переключателей в слайдере
+// Миксин для стилизации переключателей в слайдере
 // $field-name - идентификатор поля input
 // $slider-block-name - класс блока в котором расположены соответствующие label`ы
 // $field-count - количество стилизуемых полей
 //
-// Пример селектора  #slide-1:checked ~ .feedback__slider label[for="#slide-1"]
+// Пример селектора:
+// #slide-1:checked ~ .feedback__slider label[for="#slide-1"]
 
 @mixin slider-label-style($field-name, $slider-block-name, $field-count) {
 
@@ -15,8 +16,14 @@
       box-shadow: 0 0 0 3px $color-secondary;
       opacity: 1;
     }
+
+    ##{$field-name}-#{$i}:focus ~ #{$slider-block-name} label[for="#{$field-name}-#{$i}"] {
+      outline: 2px solid blue;
+    }
   }
 }
+
+// Миксин для отрисовки кастомных инпутов
 
 @mixin draw-input-box($border-radius: 0%) {
   content: "";

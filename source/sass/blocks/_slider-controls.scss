@@ -15,13 +15,13 @@
   border-radius: 50%;
   background-color: $color-secondary;
   opacity: 0.3;
-}
 
-.slider-controls__label:hover {
-  opacity: 0.6;
-  cursor: pointer;
-}
+  &:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
 
-.slider-controls__label:active {
-  opacity: 0.1;
+  &:active {
+    opacity: 0.1;
+  }
 }
