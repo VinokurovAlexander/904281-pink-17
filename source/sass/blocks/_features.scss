@@ -69,15 +69,6 @@
   }
 }
 
-.features_link {
-  color: $color-main;
-
-  @media (min-width: $desktop-width) {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
 .features__moto br {
   @media (min-width: $desktop-width) {
     display: none;
