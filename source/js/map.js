@@ -1,3 +1,4 @@
+document.querySelector(".map").classList.remove("map--no-js");
 var myMap;
 
 ymaps.ready(init);

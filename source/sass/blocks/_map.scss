@@ -10,3 +10,15 @@
     height: 520px;
   }
 }
+
+.map--no-js {
+  overflow: hidden;
+}
+
+.map__image {
+  display: none;
+}
+
+.map--no-js .map__image {
+  display: inline-block;
+}
