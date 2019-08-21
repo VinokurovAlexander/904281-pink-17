@@ -75,3 +75,9 @@
     width: 775px;
   }
 }
+
+.page-main--photo-page {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
+}

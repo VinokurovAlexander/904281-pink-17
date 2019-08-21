@@ -14,10 +14,13 @@
     top: 0;
     left: 0;
 
+    width: 200px;
     margin: 0;
     margin-top: 19px;
+  }
 
-    width: 200px;
+  @media (min-width: $desktop-width) {
+    width: 287px;
   }
 }
 
@@ -51,10 +54,25 @@
   @media (min-width: $tablet-width) {
     right: 89px;
   }
+
+  @media (min-width: $desktop-width) {
+    right: 112px;
+  }
 }
 
 .scale__range-toggle--fill {
   @media (min-width: $tablet-width) {
     left: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: auto;
+    right: 27px;
+  }
+}
+
+.scale__range-toggle--crop {
+  @media (min-width: $desktop-width) {
+    left: 70px;
   }
 }

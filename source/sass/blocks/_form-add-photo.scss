@@ -18,6 +18,15 @@
     width: 260px;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+    margin-right: 40px;
+  }
+
+  &:nth-child(odd) {
+    margin-right: 0;
+  }
 }
 
 .form-add-photo__button--add {
@@ -29,6 +38,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 
   &:hover {
@@ -59,10 +72,15 @@
 }
 
 .form-add-photo__list {
-  margin-bottom: 39px;
+  margin-bottom: 65px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 136px;
   }
 }
 
@@ -71,5 +89,10 @@
     box-sizing: border-box;
     width: 300px;
     padding-left: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
+    padding: 0;
   }
 }
