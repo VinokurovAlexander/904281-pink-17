@@ -29,13 +29,13 @@
   @media (min-width: $desktop-width) {
     width: 805px;
   }
+}
 
-  span {
-    display: none;
+.form-contest__moto-additional {
+  display: none;
 
-    @media (min-width: $tablet-width) {
-      display: inline;
-    }
+  @media (min-width: $tablet-width) {
+    display: inline;
   }
 }
 

@@ -164,7 +164,8 @@
   }
 }
 
-.main-nav--opened {
+.main-nav--opened,
+.main-nav--nojs {
   position: relative;
   margin-bottom: -66px;
 
@@ -179,4 +180,12 @@
 
 .main-nav--nojs .main-nav__toggle {
   display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  display: block;
+}
+
+.main-nav--nojs {
+  background-color: $color-secondary;
 }
