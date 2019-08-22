@@ -1,5 +1,5 @@
 .form-emotions {
-  padding-top: 72px;
+  padding-top: 0;
   padding-bottom: 44px;
 
   @media (min-width: $tablet-width) {
@@ -10,4 +10,9 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 37px;
   }
+}
+
+.form-emotions__title {
+  margin-top: 38px;
+  margin-bottom: 18px;
 }

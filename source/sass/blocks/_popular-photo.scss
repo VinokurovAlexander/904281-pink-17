@@ -38,6 +38,22 @@
   }
 }
 
+.popular-photo__image {
+  width: 320px;
+  height: 137px;
+
+  @media (min-width: $tablet-width) {
+    width: 700px;
+    height: 509px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    max-width: 1200px;
+    height: 506px;
+  }
+}
+
 .popular-photo__wrapper {
   padding-bottom: 20px;
 

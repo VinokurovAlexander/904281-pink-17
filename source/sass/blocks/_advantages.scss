@@ -84,6 +84,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
   padding-top: 82px;
@@ -103,7 +104,6 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     align-items: stretch;
-    justify-content: space-between;
     padding-top: 0;
     padding-left: 123px;
     padding-right: 123px;
@@ -156,9 +156,14 @@
 
     padding-top: 356px;
     margin-top: -5px;
+    margin-right: 12px;
 
     background-repeat: no-repeat;
     background-position: center top;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 }
 

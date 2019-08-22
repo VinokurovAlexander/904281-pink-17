@@ -1,5 +1,5 @@
 .form-app-platform {
-  padding-top: 114px;
+  padding-top: 0;
   padding-bottom: 47px;
 
   background-color: $color-bg;
@@ -27,4 +27,9 @@
   @media (min-width: $desktop-width) {
     margin-left: 72px;
   }
+}
+
+.form-app-platform__title {
+  margin-top: 38px;
+  margin-bottom: 40px;
 }

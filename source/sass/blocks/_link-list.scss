@@ -1,11 +1,18 @@
 .link-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   width: 210px;
   padding: 0;
 
   list-style: none;
+}
+
+.link-list__item {
+  margin-right: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .link-list__link {

@@ -1,10 +1,9 @@
 .editor-list {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   width: 210px;
   margin: 0 auto;
-  padding-bottom: 39px;
+
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -15,7 +14,16 @@
 }
 
 .editor-list__item {
+  position: relative;
+  padding-bottom: 39px;
+  margin-right: 27px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+
   @media (min-width: $tablet-width) {
+    display: flex;
     padding-bottom: 23px;
     margin-bottom: 17px;
 
@@ -109,14 +117,6 @@
   @media (min-width: $desktop-width) {
     margin-top: 0;
     margin-right: 54px;
-  }
-}
-
-.editor-list__item {
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
   }
 }
 

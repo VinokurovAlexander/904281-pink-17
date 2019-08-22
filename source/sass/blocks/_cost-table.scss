@@ -8,6 +8,7 @@
 
   box-sizing: border-box;
   min-width: 279px;
+  max-width: 400px;
   padding-top: 15px;
   padding-bottom: 16px;
   padding-left: 20px;
@@ -144,4 +145,8 @@
   @media (min-width: $tablet-width) {
     display: table-cell;
   }
+}
+
+.cost-table__icon {
+  margin-top: 2px;
 }
