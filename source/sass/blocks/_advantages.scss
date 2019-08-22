@@ -1,25 +1,42 @@
 .advantages {
   position: relative;
+  z-index: 50;
 
   min-height: 1002px;
 
   background-color: $color-bg;
-  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-image:
+      url("../img/iphone-screen-mobile@1x.png"),
+      url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-position: center bottom -42px;
+  background-position:
+      center bottom -42px,
+      left 32% top 19%;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-position: left 19px bottom;
+    min-height: 725px;
+
+    background-image:
+        url("../img/iphone-screen-3-tablet@1x.png"),
+        url("../img/bg-triangle-white.svg");
+    background-position:
+        left 19px bottom,
+        center top 35%;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: none;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-size: cover;
+    background-position: center top;
   }
 }
 
 .advantages__list {
   margin-top: 81px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 76px;
+  }
 }
 
 .advantages__header {
@@ -30,10 +47,10 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 50px;
+    padding-bottom: 46px;
     padding-left: 19px;
     padding-right: 19px;
 
-    margin-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,25 +103,30 @@
   }
 }
 
-.advantages::before {
-  content: "";
-  position: absolute;
-  top: 23%;
-  left: 0;
-  transform: translateY(-42%);
-
-  width: 320px;
-  height: 33px;
-
-  background: linear-gradient(to bottom right, white 50%, #f2f2f2 50%);
-
-  @media (min-width: $tablet-width) {
-    width: 660px;
-    height: 50px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 100%;
-    height: 92px;
-  }
-}
+// .advantages::before {
+//   content: "";
+//   position: absolute;
+//   top: 23%;
+//   left: 0;
+//   transform: translateY(-42%);
+//
+//   width: 320px;
+//   height: 33px;
+//
+//   background: linear-gradient(to bottom right, white 50%, #f2f2f2 50%);
+//
+//   @media (min-width: $tablet-width) {
+//     top: 36%;
+//     transform: translateY(-41%);
+//     z-index: 10;
+//     display: none;
+//
+//     width: 660px;
+//     height: 50px;
+//   }
+//
+//   @media (min-width: $desktop-width) {
+//     width: 100%;
+//     height: 92px;
+//   }
+// }

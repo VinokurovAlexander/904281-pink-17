@@ -46,7 +46,8 @@ gulp.task("webp", function() {
   return gulp.src([
     "source/img/**/photo-*.{png,jpg}",
     "source/img/**/panorama-*.{png,jpg}",
-    "source/img/**/bg-map-*.{png,jpg}"
+    "source/img/**/bg-map-*.{png,jpg}",
+    "source/img/**/iphone-screen-*.{png,jpg}"
   ])
   .pipe(webp({quality: 85}))
   .pipe(gulp.dest("source/img"));
