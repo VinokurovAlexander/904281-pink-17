@@ -38,3 +38,9 @@
 .copyright__link:active .copyright__htmlacademy-logo {
   opacity: 0.3;
 }
+
+.copyright__htmlacademy-logo {
+  @media (min-width: $desktop-width) {
+    padding-top: 8px;
+  }
+}

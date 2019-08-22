@@ -44,6 +44,7 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
+    margin-bottom: 58px;
   }
 }
 
@@ -99,15 +100,19 @@
 
 .form-contest__app-platform {
   @media (min-width: $tablet-width) {
-    margin-bottom: 53px;
+    margin-bottom: 55px;
     order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
   }
 }
 
 .form-contest__contacts {
   @media (min-width: $tablet-width) {
     order: 3;
-    margin-bottom: 57px;
+    margin-bottom: 59px;
   }
 }
 
@@ -121,7 +126,7 @@
 .form-contest__emotions {
   @media (min-width: $tablet-width) {
     order: 5;
-    margin-bottom: 66px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
