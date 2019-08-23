@@ -1,18 +1,19 @@
 .form-achievements {
-  padding-bottom: 49px;
+  padding-bottom: 48px;
   padding-top: 0;
 
   background-color: $color-bg;
 
   @media (min-width: $tablet-width) {
-    padding-top: 49px;
-    padding-bottom: 56px;
+    padding-top: 48px;
+    padding-bottom: 52px;
     background-color: #ffffff;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 57px;
-    padding-bottom: 57px;
+    padding-bottom: 59px;
+    padding-top: 47px;
   }
 }
 
@@ -29,7 +30,7 @@
 }
 
 .form-achievements__wrapper {
-  margin-bottom: 52px;
+  margin-bottom: 51px;
 
   &:last-child {
     margin-bottom: 0;
@@ -48,6 +49,6 @@
 }
 
 .form-achievements__title {
-  margin-top: 40px;
+  margin-top: 39px;
   margin-bottom: 44px;
 }

@@ -1,10 +1,10 @@
 .form-contacts {
-  padding-top: 34px;
+  padding-top: 32px;
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     padding-top: 38px;
-    padding-bottom: 21px;
+    padding-bottom: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,7 +22,7 @@
 }
 
 .form-contacts__wrapper:first-of-type {
-  margin-bottom: -2px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;
@@ -70,11 +70,11 @@
     &:before {
       content: "";
       position: absolute;
-      right: 1px;
+      right: 3px;
       top: 2px;
 
-      width: 61px;
-      height: 61px;
+      width: 60px;
+      height: 59px;
 
       background-color: #e5e5e5;
       background-repeat: no-repeat;

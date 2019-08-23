@@ -31,7 +31,7 @@
   box-sizing: border-box;
   width: 280px;
   padding: 15px 21px;
-  margin-bottom: 17px;
+  margin-bottom: 16px;
 
   border: 2px solid #e7e7e7;
   border-radius: 2px;
@@ -55,8 +55,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: 522px;
-    margin-bottom: 50px;
+    width: 525px;
+    margin-bottom: 52px;
+    padding-top: 15px;
+    padding-bottom: 14px;
 
     &[name="name"] {
       width: 565px;
@@ -188,9 +190,9 @@
 .form__textarea {
   box-sizing: border-box;
   width: 100%;
-  min-height: 198px;
+  min-height: 201px;
   margin: 0;
-  padding: 13px 18px;
+  padding: 14px 18px;
 
   border: 2px solid #e5e5e5;
   color: $color-secondary;
@@ -206,7 +208,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 125px;
+    min-height: 128px;
+    padding-top: 14px
   }
 }
 

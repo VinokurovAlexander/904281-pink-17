@@ -25,19 +25,15 @@
 
 .page-main__header {
   min-height: 140px;
-  padding-top: 30px;
+  padding-top: 96px;
 
   background: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-color: $color-secondary;
 
-  @media (min-width: $mobile-width) {
-    padding-top: 97px;
-  }
-
   @media (min-width: $tablet-width) {
     min-height: 260px;
-    padding-top: 180px;
+    padding-top: 179px;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: left -270px top;
@@ -57,6 +53,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
   }
 }
 

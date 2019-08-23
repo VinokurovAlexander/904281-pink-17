@@ -13,20 +13,20 @@
   @media (min-width: $tablet-width) {
     width: 445px;
     padding-top: 92px;
-    padding-bottom: 77px;
+    padding-bottom: 75px;
 
     font-size: 18px;
   }
 
   @media (min-width: $desktop-width) {
     width: 580px;
-    padding-bottom: 90px;
+    padding-bottom: 88px;
   }
 }
 
 .user-photos__moto--footer {
   width: 265px;
-  padding-top: 19px;
+  padding-top: 22px;
   padding-bottom: 43px;
 
   @media (min-width: $tablet-width) {
