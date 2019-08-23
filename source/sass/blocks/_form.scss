@@ -50,10 +50,6 @@
     outline: none;
   }
 
-  &:focus + .form__label:before {
-    border-color: $color-main;
-  }
-
   @media (min-width: $tablet-width) {
     width: 525px;
     margin-bottom: 52px;
@@ -73,6 +69,10 @@
       width: 380px;
     }
   }
+}
+
+.form__input:focus + .form__label::before {
+  border-color: $color-main;
 }
 
 .form__label {
@@ -153,10 +153,10 @@
 }
 
 .form__label--checkbox::before {
-    @include draw-input-box();
+  @include draw-input-box();
 }
 
-.form__input:checked + .form__label--checkbox:after {
+.form__input:checked + .form__label--checkbox::after {
   content: "";
   position: absolute;
   left: 10px;
@@ -174,7 +174,7 @@
   @include draw-input-box(50%);
 }
 
-.form__input:checked + .form__label--radio:after {
+.form__input:checked + .form__label--radio::after {
   content: "";
   position: absolute;
   left: 12px;
@@ -209,7 +209,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 128px;
-    padding-top: 14px
+    padding-top: 14px;
   }
 }
 

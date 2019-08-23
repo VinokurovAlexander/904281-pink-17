@@ -3,31 +3,30 @@
 
   background-color: $color-bg;
   background-image:
-      url("../img/iphone-screen-mobile@1x.png"),
-      url("../img/bg-triangle-white.svg");
+    url("../img/iphone-screen-mobile@1x.png"),
+    url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-position:
-      center bottom -42px,
-      center 185px;;
+    center bottom -42px,
+    center top 185px;
 
   @media (min-width: $tablet-width) {
     min-height: 725px;
 
     background-image:
-        url("../img/iphone-screen-3-tablet@1x.png"),
-        url("../img/bg-triangle-white.svg");
+      url("../img/iphone-screen-3-tablet@1x.png"),
+      url("../img/bg-triangle-white.svg");
     background-position:
-        left 19px bottom,
-        center top 219px;
+      left 19px bottom,
+      center top 219px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 950px;
-
     background-image: url("../img/bg-triangle-white.svg");
     background-size: 154%;
-    background-position: center top 37%;
-    background-position: center top 299px;
+    background-position:
+      center top 37%,
+      center top 299px;
   }
 }
 
@@ -50,7 +49,6 @@
     padding-bottom: 46px;
     padding-left: 19px;
     padding-right: 19px;
-
   }
 
   @media (min-width: $desktop-width) {

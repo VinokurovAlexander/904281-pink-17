@@ -84,9 +84,7 @@
 
 .main-nav--opened .main-nav__toggle {
   margin-bottom: 24px;
-}
 
-.main-nav--opened .main-nav__toggle {
   &::after,
   &::before {
     content: "";

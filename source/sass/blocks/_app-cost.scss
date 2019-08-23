@@ -29,23 +29,36 @@
   }
 }
 
-@include slider-label-style ("rate", ".app-cost__slider", 3);
+.app-cost__rate-1:checked ~ .app-cost__slider label[for="rate-1"],
+.app-cost__rate-2:checked ~ .app-cost__slider label[for="rate-2"],
+.app-cost__rate-3:checked ~ .app-cost__slider label[for="rate-3"] {
+  background-color: transparent;
+  box-shadow: 0 0 0 3px $color-secondary;
+  opacity: 1;
+}
 
-#rate-1:checked ~ .app-cost__table {
+.app-cost__rate-1:focus ~ .app-cost__slider label[for="rate-1"],
+.app-cost__rate-2:focus ~ .app-cost__slider label[for="rate-2"],
+.app-cost__rate-3:focus ~ .app-cost__slider label[for="rate-3"] {
+  box-shadow: 0 0 0 3px $color-main;
+}
+
+
+.app-cost__rate-1:checked ~ .app-cost__table {
   transform: translateX(0);
 }
 
-#rate-2:checked ~ .app-cost__table {
+.app-cost__rate-2:checked ~ .app-cost__table {
   transform: translateX(-31%);
 }
 
-#rate-3:checked ~ .app-cost__table {
+.app-cost__rate-3:checked ~ .app-cost__table {
   transform: translateX(-62%);
 }
 
-#rate-1:checked ~ .app-cost__table,
-#rate-2:checked ~ .app-cost__table,
-#rate-3:checked ~ .app-cost__table {
+.app-cost__rate-1:checked ~ .app-cost__table,
+.app-cost__rate-2:checked ~ .app-cost__table,
+.app-cost__rate-3:checked ~ .app-cost__table {
   @media (min-width: $tablet-width) {
     transform: translateX(0);
   }

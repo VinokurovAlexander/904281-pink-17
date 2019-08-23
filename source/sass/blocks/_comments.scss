@@ -44,7 +44,7 @@
   width: 320px;
   height: 24px;
 
-  background: linear-gradient(to bottom right,#ffffff 50%,$color-bg 50%);
+  background: linear-gradient(to bottom right, #ffffff 50%, $color-bg 50%);
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -114,7 +114,7 @@
 
 .comments__item {
   display: none;
-  min-height: 222px;
+  min-height: 223px;
 }
 
 .comments__slider {
@@ -126,16 +126,28 @@
   }
 }
 
-#slide-1:checked ~ .comments__list #comment-1,
-#slide-2:checked ~ .comments__list #comment-2,
-#slide-3:checked ~ .comments__list #comment-3 {
+.comments__slide-1:checked ~ .comments__list .comments__comment-1,
+.comments__slide-2:checked ~ .comments__list .comments__comment-2,
+.comments__slide-3:checked ~ .comments__list .comments__comment-3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
 }
 
-@include slider-label-style("slide",".comments__slider", 3);
+.comments__slide-1:checked ~ .comments__slider label[for="slide-1"],
+.comments__slide-2:checked ~ .comments__slider label[for="slide-2"],
+.comments__slide-3:checked ~ .comments__slider label[for="slide-3"] {
+  background-color: transparent;
+  box-shadow: 0 0 0 3px $color-secondary;
+  opacity: 1;
+}
+
+.comments__slide-1:focus ~ .comments__slider label[for="slide-1"],
+.comments__slide-2:focus ~ .comments__slider label[for="slide-2"],
+.comments__slide-3:focus ~ .comments__slider label[for="slide-3"] {
+  box-shadow: 0 0 0 3px $color-main;
+}
 
 .comments__author-info {
   display: none;
