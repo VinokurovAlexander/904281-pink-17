@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 50px;
-    padding-bottom: 57px;
+    padding-bottom: 59px;
 
     background-color: #ffffff;
   }
@@ -33,4 +33,15 @@
 .form-app-platform__title {
   margin-top: 38px;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 368px;
+    margin-top: -60px;
+    margin-bottom: 48px;
+  }
+}
+
+.form-app-platform__input {
+  width: 1px;
+  height: 1px;
 }

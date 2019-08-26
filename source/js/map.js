@@ -11,11 +11,11 @@ function init () {
     }),
 
     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-      hintContent: 'Собственный значок метки',
-      balloonContent: 'Это красивая метка'
+      hintContent: 'ул. Большая Конюшенная, 19/8',
+      balloonContent: 'ул. Большая Конюшенная, 19/8'
     },{
       iconLayout: "default#image",
-      iconImageHref: '../img/map-marker.svg',
+      iconImageHref: 'img/map-marker.svg',
       iconImageSize: [35, 35]
     });
 

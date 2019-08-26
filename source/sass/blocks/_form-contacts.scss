@@ -105,3 +105,14 @@
     display: inline;
   }
 }
+
+.form-contacts__title {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 260px;
+    margin-top: -48px;
+    margin-bottom: 38px;
+  }
+}

@@ -16,4 +16,10 @@
 .form-emotions__title {
   margin-top: 37px;
   margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+    margin-top: -48px;
+    margin-bottom: 38px;
+  }
 }
