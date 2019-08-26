@@ -74,6 +74,8 @@
 }
 
 .popular-photo__quote {
+  min-height: auto;
+
   @media (min-width: $tablet-width) {
     order: 2;
     padding-right: 2px;

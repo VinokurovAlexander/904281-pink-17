@@ -40,9 +40,9 @@
 
 .photo-list__wrapper {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: flex-start;
   box-sizing: border-box;
   width: 280px;
   padding-left: 18px;
@@ -123,12 +123,14 @@
 }
 
 .photo-list__quote {
+  max-width: 100%;
   margin: 0;
   margin-bottom: 10px;
 
   font-weight: 400;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: auto;
+    margin-bottom: 0;
+    min-height: 62px;
   }
 }
