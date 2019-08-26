@@ -95,3 +95,11 @@
     padding: 29px 0;
   }
 }
+
+.page-footer__list--form-page {
+  @media (min-width: $desktop-width) {
+    width: 207px;
+    padding-left: 24px;
+    padding-right: 0;
+  }
+}
