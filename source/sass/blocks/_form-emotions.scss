@@ -22,4 +22,9 @@
     margin-top: -48px;
     margin-bottom: 38px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -43px;
+    margin-bottom: 34px;
+  }
 }

@@ -57,6 +57,10 @@
     margin-top: -60px;
     margin-bottom: 48px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -57px;
+  }
 }
 
 .form-achievements__input {
