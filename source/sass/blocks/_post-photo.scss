@@ -1,0 +1,23 @@
+.post-photo {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 280px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 18px;
+  padding-bottom: 21px;
+
+  background-color: $color-bg;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    min-height: 155px;
+    padding-top: 24px;
+    padding-left: 27px;
+    padding-right: 31px;
+    padding-bottom: 22px;
+  }
+}
