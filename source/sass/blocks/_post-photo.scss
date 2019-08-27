@@ -21,3 +21,47 @@
     padding-bottom: 22px;
   }
 }
+
+.post-photo__info {
+  max-width: 250px;
+  margin: 0;
+  margin-bottom: -1px;
+  padding: 0;
+}
+
+.post-photo__author-name {
+  display: inline-block;
+}
+
+.post-photo__author-name,
+.post-photo__quote {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+  color: $color-secondary;
+}
+
+.post-photo__publication-time {
+  display: inline-block;
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $color-secondary;
+  text-transform: uppercase;
+}
+
+.post-photo__quote {
+  max-width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    min-height: 62px;
+  }
+}
