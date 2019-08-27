@@ -101,6 +101,7 @@
 }
 
 .popular-photo picture {
+  display: block;
   height: 137px;
 
   @media (min-width: $tablet-width) {
