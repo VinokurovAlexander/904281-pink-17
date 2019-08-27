@@ -20,31 +20,16 @@
 .form-achievements__label {
   @media (min-width: $desktop-width) {
     margin-bottom: 53px;
+    margin-right: 58px;
   }
-}
-
-.form-achievements__wrapper-main {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
 }
 
 .form-achievements__wrapper {
-  margin-bottom: 51px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+  display: flex;
+  flex-flow: column nowrap;
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    margin-right: 57px;
-    margin-bottom: 0;
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
+    flex-flow: row wrap;
   }
 }
 
@@ -66,4 +51,36 @@
 .form-achievements__input {
   width: 1px;
   height: 1px;
+}
+
+.form-achievements__label--shark-selfe {
+  order: 1;
+}
+
+.form-achievements__label--chuck-norris {
+  order: 2;
+  margin-right: 53px;
+}
+
+.form-achievements__label--tower {
+  order: 3;
+  margin-right: 0;
+}
+
+.form-achievements__label--sunburn {
+  order: 4;
+  margin-right: 95px;
+  margin-bottom: 0;
+}
+
+.form-achievements__label--souvenirs {
+  order: 5;
+  margin-right: 65px;
+  margin-bottom: 0;
+}
+
+.form-achievements__label--hotel-mayhem {
+  order: 6;
+  margin-right: 0;
+  margin-bottom: 0;
 }
