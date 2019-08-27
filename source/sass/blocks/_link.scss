@@ -14,3 +14,9 @@
     line-height: 30px;
   }
 }
+
+.link--mail {
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -69,9 +69,7 @@
 }
 
 .main-nav__logo-link:active .main-nav__logo-img {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    fill-opacity: 0.3;
-  }
+  fill-opacity: 0.3;
 }
 
 .main-nav--opened .main-nav__logo-link {
