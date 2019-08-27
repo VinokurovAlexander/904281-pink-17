@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 48px;
-    padding-bottom: 54px;
+    padding-bottom: 53px;
     background-color: #ffffff;
   }
 
@@ -39,7 +39,7 @@
 
   @media (min-width: $tablet-width) {
     width: 430px;
-    margin-top: -60px;
+    margin-top: -58px;
     margin-bottom: 48px;
   }
 
@@ -54,33 +54,45 @@
 }
 
 .form-achievements__label--shark-selfe {
-  order: 1;
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
 }
 
 .form-achievements__label--chuck-norris {
-  order: 2;
-  margin-right: 53px;
+  @media (min-width: $desktop-width) {
+    order: 2;
+    margin-right: 53px;
+  }
 }
 
 .form-achievements__label--tower {
-  order: 3;
-  margin-right: 0;
+  @media (min-width: $desktop-width) {
+    order: 3;
+    margin-right: 0;
+  }
 }
 
 .form-achievements__label--sunburn {
-  order: 4;
-  margin-right: 95px;
-  margin-bottom: 0;
+  @media (min-width: $desktop-width) {
+    order: 4;
+    margin-right: 95px;
+    margin-bottom: 0;
+  }
 }
 
 .form-achievements__label--souvenirs {
-  order: 5;
-  margin-right: 65px;
-  margin-bottom: 0;
+  @media (min-width: $desktop-width) {
+    order: 5;
+    margin-right: 65px;
+    margin-bottom: 0;
+  }
 }
 
 .form-achievements__label--hotel-mayhem {
-  order: 6;
-  margin-right: 0;
-  margin-bottom: 0;
+  @media (min-width: $desktop-width) {
+    order: 6;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }

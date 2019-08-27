@@ -30,6 +30,7 @@
 .form__input {
   box-sizing: border-box;
   width: 280px;
+  min-height: 63px;
   padding: 15px 21px;
   margin-bottom: 16px;
 
@@ -127,28 +128,11 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 59px;
-    margin-bottom: 53px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
     width: auto;
-  }
-}
-
-.form__legend {
-  display: none;
-
-  color: $color-main;
-  line-height: 18px;
-  text-transform: uppercase;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    width: auto;
-    max-width: 390px;
-    margin: 0 auto;
-    padding: 0 25px;
   }
 }
 
@@ -168,6 +152,7 @@
   background-image: url("../img/icon-yes-main-color.svg");
   background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .form__label--radio::before {
@@ -202,7 +187,7 @@
   font-family: inherit;
 
   @media (min-width: $tablet-width) {
-    padding-top: 16px;
+    padding-top: 14px;
     padding-bottom: 16px;
     min-height: 193px;
   }

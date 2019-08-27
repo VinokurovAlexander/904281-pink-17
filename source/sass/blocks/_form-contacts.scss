@@ -1,23 +1,15 @@
 .form-contacts {
   padding-top: 32px;
-  padding-bottom: 25px;
+  padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     padding-top: 38px;
-    padding-bottom: 23px;
+    padding-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 35px;
-    padding-bottom: 8px;
-  }
-}
-
-.form-contacts__legend {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
+    padding-bottom: 11px;
   }
 }
 
@@ -25,7 +17,7 @@
   margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,6 +48,8 @@
 }
 
 .form-contacts__label {
+  margin-bottom: 3px;
+
   @media (min-width: $tablet-width) {
     order: 1;
     padding-left: 19px;
@@ -112,7 +106,12 @@
   @media (min-width: $tablet-width) {
     display: block;
     width: 260px;
-    margin-top: -46px;
+    margin-top: -48px;
     margin-bottom: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -45px;
+    margin-bottom: 34px;
   }
 }
