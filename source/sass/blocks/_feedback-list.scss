@@ -79,4 +79,8 @@
     width: 215px;
     margin-top: 4px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
