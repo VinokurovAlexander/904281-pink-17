@@ -3,9 +3,13 @@
   padding-bottom: 30px;
   padding-top: 88px;
 
-  background:
-    left top 176px no-repeat url("../img/iphone-hand-mobile@1x.png"),
-    center top no-repeat url("../img/bg-back-mobile@1x.jpg");
+  background-image:
+    url("../img/iphone-hand-mobile@1x.png"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-position:
+    left top 176px,
+    center top;
+  background-repeat: no-repeat;
   background-color: #1d2631;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -24,9 +28,12 @@
     padding-left: 19px;
     padding-right: 19px;
 
-    background:
-      left -20px bottom no-repeat url("../img/iphone-hand-tablet@1x.png"),
-      center no-repeat url("../img/bg-back-tablet@1x.jpg");
+    background-image:
+      url("../img/iphone-hand-tablet@1x.png"),
+      url("../img/bg-back-tablet@1x.jpg");
+    background-position:
+      left -20px bottom,
+      center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image:
@@ -47,9 +54,12 @@
     padding-left: 130px;
     padding-right: 130px;
 
-    background:
-      right 4px bottom no-repeat url("../img/iphone-hand-desktop@1x.png"),
-      center top 19px no-repeat url("../img/bg-back-desktop@1x.jpg");
+    background-image:
+      url("../img/iphone-hand-desktop@1x.png"),
+      url("../img/bg-back-desktop@1x.jpg");
+    background-position:
+      right 4px bottom,
+      center top 19px;
     background-size:
       auto,
       cover;
