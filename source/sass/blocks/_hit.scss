@@ -21,6 +21,13 @@
     overflow: hidden;
     background-size: 118%;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 69px;
+    height: 71px;
+
+    background-size: 104%;
+  }
 }
 
 .hit::before {
@@ -30,6 +37,7 @@
   left: 10px;
   z-index: 10;
 
+  font-size: 14px;
   line-height: 30px;
   color: #ffffff;
   text-transform: uppercase;
@@ -38,5 +46,10 @@
   @media (min-width: $tablet-width) {
     top: 3px;
     left: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 10px;
+    left: 10px;
   }
 }
